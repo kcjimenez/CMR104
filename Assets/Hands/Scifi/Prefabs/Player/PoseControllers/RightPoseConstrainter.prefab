@@ -8,6 +8,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2393145034796800365, guid: 58f726e9235ec46f0ba6799d547d6c53, type: 3}
+      propertyPath: tweenScale
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 2855926108743986441, guid: 58f726e9235ec46f0ba6799d547d6c53, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.153
@@ -15,6 +19,10 @@ PrefabInstance:
     - target: {fileID: 4354173663551008262, guid: 58f726e9235ec46f0ba6799d547d6c53, type: 3}
       propertyPath: hand
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5364813254919610930, guid: 58f726e9235ec46f0ba6799d547d6c53, type: 3}
+      propertyPath: fingers.Array.data[0]
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5750447519052618830, guid: 58f726e9235ec46f0ba6799d547d6c53, type: 3}
       propertyPath: m_LocalRotation.x
