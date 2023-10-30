@@ -40,6 +40,7 @@ public class TeleportEffect : MonoBehaviour
             }
 
             flashingLight.intensity = 0f; // Set light intensity to zero, effectively turning it off
+            Destroy(flashingLight);
             this.enabled = false; // Disable this script
         }
 

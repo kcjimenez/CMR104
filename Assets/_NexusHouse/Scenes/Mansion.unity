@@ -10636,7 +10636,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1044587161}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd3ebceba0e4c244abeb3448507820fe, type: 3}
   m_Name: 
@@ -10644,7 +10644,7 @@ MonoBehaviour:
   flashlight: {fileID: 1385681234}
   hand: {fileID: 2013836580}
   head: {fileID: 836623034}
-  toggleDistance: 0.5
+  toggleDistance: 0.2
   toggleCooldown: 2
 --- !u!1001 &1052539781
 PrefabInstance:
