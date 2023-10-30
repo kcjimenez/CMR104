@@ -419,7 +419,7 @@ GameObject:
   - component: {fileID: 32445348}
   - component: {fileID: 32445347}
   m_Layer: 0
-  m_Name: Point Light
+  m_Name: Teleport Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -519,7 +519,7 @@ Transform:
   m_GameObject: {fileID: 32445346}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 22.158, y: 1.889, z: 9.585}
+  m_LocalPosition: {x: 22.158, y: 0.68, z: 9.585}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6453,10 +6453,9 @@ GameObject:
   - component: {fileID: 705273869}
   - component: {fileID: 705273868}
   - component: {fileID: 705273867}
-  - component: {fileID: 705273866}
   - component: {fileID: 705273865}
   m_Layer: 0
-  m_Name: InterfaceTrigger
+  m_Name: InterfaceOne
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6558,27 +6557,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!65 &705273866
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 705273864}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &705273867
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6637,12 +6615,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 705273864}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 22.061, y: 0.468, z: 9.185}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.3604851, y: 2.0540903, z: 5.679189}
   m_LocalScale: {x: 0.35386, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1114427231}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &705507993
 GameObject:
@@ -11310,7 +11288,7 @@ GameObject:
   - component: {fileID: 1114427230}
   - component: {fileID: 1114427229}
   m_Layer: 0
-  m_Name: Dialogue
+  m_Name: Dialogues
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11437,7 +11415,8 @@ Transform:
   m_LocalPosition: {x: 23.421486, y: -1.5860903, z: 3.5058112}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 705273869}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1128216387
@@ -26782,6 +26761,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -1.2310009
       objectReference: {fileID: 0}
+    - target: {fileID: 3502966551001335248, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3515474033045506306, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
       propertyPath: m_LocalPosition.y
       value: -1.2310009
@@ -28415,5 +28398,4 @@ SceneRoots:
   - {fileID: 1408489956}
   - {fileID: 32445349}
   - {fileID: 1114427231}
-  - {fileID: 705273869}
   - {fileID: 336661039}

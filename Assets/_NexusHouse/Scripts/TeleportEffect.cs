@@ -50,12 +50,12 @@ public class TeleportEffect : MonoBehaviour
 
             if (isLightOn)
             {
-                flashingLight.intensity = 350f;
+                flashingLight.intensity = 27f;
                 nextFlashTime = Time.time + flashDuration;
             }
             else
             {
-                flashingLight.intensity = 0f;
+                flashingLight.intensity = 10f;
                 nextFlashTime = Time.time + flashInterval;
             }
         }
