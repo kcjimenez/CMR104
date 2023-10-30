@@ -16,13 +16,13 @@ public class FlashlightTrigger : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.JoystickButton2) && !lightOn)
+        if (Input.GetKeyDown(KeyCode.JoystickButton0) && !lightOn)
         {
             flashlight.enabled = true;
             lightOn = true;
         }
 
-        else if (Input.GetKeyDown(KeyCode.JoystickButton2) && lightOn)
+        else if (Input.GetKeyDown(KeyCode.JoystickButton0) && lightOn)
         {
             flashlight.enabled = false;
             lightOn = false;
