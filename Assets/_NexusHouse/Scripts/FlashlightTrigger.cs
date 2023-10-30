@@ -1,0 +1,46 @@
+using System.Collections;
+using System.Collections.Generic;
+using Unity.VisualScripting.Antlr3.Runtime;
+using UnityEngine;
+
+public class FlashlightTrigger : MonoBehaviour
+{
+    [SerializeField] Light flashlight;
+    public bool lightOn;
+
+    void Start()
+    {
+        flashlight.enabled = false;
+        lightOn = false;
+    }
+
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.JoystickButton2) && !lightOn)
+        {
+            flashlight.enabled = true;
+            lightOn = true;
+        }
+
+        else if (Input.GetKeyDown(KeyCode.JoystickButton2) && lightOn)
+        {
+            flashlight.enabled = false;
+            lightOn = false;
+        }
+    }
+
+    /*private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "Player" && !lightOn)
+        {
+            flashlight.enabled=true;
+            lightOn= true;
+        }
+
+        else if (other.gameObject.tag == "Player" && lightOn)
+        {
+            flashlight.enabled = false;
+            lightOn = false;
+        }
+    }*/
+}

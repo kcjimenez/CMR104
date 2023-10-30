@@ -10636,7 +10636,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1044587161}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd3ebceba0e4c244abeb3448507820fe, type: 3}
   m_Name: 
@@ -13596,6 +13596,7 @@ GameObject:
   - component: {fileID: 1385681236}
   - component: {fileID: 1385681234}
   - component: {fileID: 1385681235}
+  - component: {fileID: 1385681237}
   m_Layer: 11
   m_Name: Flashlight
   m_TagString: Untagged
@@ -13610,7 +13611,7 @@ Light:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1385681233}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 10
   m_Type: 0
   m_Shape: 0
@@ -13697,12 +13698,26 @@ Transform:
   m_GameObject: {fileID: 1385681233}
   serializedVersion: 2
   m_LocalRotation: {x: 0.020846518, y: 0.009634301, z: -0.038911164, w: 0.9989788}
-  m_LocalPosition: {x: 0, y: 2.74, z: -0}
+  m_LocalPosition: {x: -0.32, y: 0, z: -1.14}
   m_LocalScale: {x: 1.3761001, y: 1.3760995, z: 1.3760997}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1044587164}
   m_LocalEulerAnglesHint: {x: -12.237, y: 0, z: 0}
+--- !u!114 &1385681237
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1385681233}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e63804e508234834982fd439f7a6786f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flashlight: {fileID: 1385681234}
+  lightOn: 0
 --- !u!1001 &1391300614
 PrefabInstance:
   m_ObjectHideFlags: 0
