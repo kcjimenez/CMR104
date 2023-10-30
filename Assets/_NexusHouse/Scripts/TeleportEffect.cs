@@ -14,7 +14,7 @@ public class TeleportEffect : MonoBehaviour
     private float nextFlashTime = 0f; // Time when the next flash should happen
     private bool isLightOn = false; // Track the state of the light
 
-    void Awake()
+    void Start()
     {
         teleportAudioSource.clip = teleportAudioClip1;
         teleportParticles.Play();

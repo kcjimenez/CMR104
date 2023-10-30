@@ -14,6 +14,8 @@ public class FlashlightController : MonoBehaviour
 
     void Start()
     {
+        flashlight.enabled= false;
+        isFlashlightOn = false;
         lastToggleTime = -toggleCooldown;  // Initialize so the flashlight can be toggled immediately
     }
 
