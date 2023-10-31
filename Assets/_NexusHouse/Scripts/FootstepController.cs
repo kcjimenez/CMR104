@@ -8,7 +8,7 @@ public class FootstepController : MonoBehaviour
     void Update()
     {
         // Check if any of the arrow keys are pressed or held
-        if (Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.RightArrow))
+        if (Mathf.Abs(Input.GetAxis("Horizontal")) > 0.1f || Mathf.Abs(Input.GetAxis("Vertical")) > 0.1f)
         {
             PlayFootstepSound();
         }

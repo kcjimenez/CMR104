@@ -31,7 +31,7 @@ public class ControllerMovement : MonoBehaviour
     void PlayerMove()
     {
         float horizontalInput = Input.GetAxis(horizontalAxisName);
-        float verticalInput = Input.GetAxis(verticalAxisName);
+        float verticalInput = -Input.GetAxis(verticalAxisName);
 
         Vector3 forward = mainCamera.transform.forward;
         forward.y = 0;
@@ -39,7 +39,7 @@ public class ControllerMovement : MonoBehaviour
         Vector3 right = mainCamera.transform.right;
         right.y = 0;
         right.Normalize();
-        Vector3 movement = horizontalInput * mainCamera.transform.right - verticalInput * forward;
+        Vector3 movement = horizontalInput * right - verticalInput * forward;
         rigidBody.velocity = movement * moveSpeed;
     }
 
