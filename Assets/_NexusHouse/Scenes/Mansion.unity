@@ -3780,6 +3780,7 @@ MonoBehaviour:
   horizontalAxisName: Horizontal
   verticalAxisName: Vertical
   rotateAxisName: Rotate
+  mainCamera: {fileID: 1044587161}
 --- !u!82 &378118173
 AudioSource:
   m_ObjectHideFlags: 0
