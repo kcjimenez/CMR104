@@ -6,7 +6,7 @@ public class IntroEffect : MonoBehaviour
 
     void Start()
     {
-        // Play sound effect
+        
         teleportSound.Play();
     }
 }
