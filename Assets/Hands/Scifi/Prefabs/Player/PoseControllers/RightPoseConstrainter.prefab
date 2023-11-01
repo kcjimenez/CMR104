@@ -69,7 +69,7 @@ PrefabInstance:
       value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 5364813254919610930, guid: 58f726e9235ec46f0ba6799d547d6c53, type: 3}
-      propertyPath: fingers.Array.data[0]
+      propertyPath: 'fingers.Array.data[0]'
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5750447519052618830, guid: 58f726e9235ec46f0ba6799d547d6c53, type: 3}
@@ -90,7 +90,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5750447519052618856, guid: 58f726e9235ec46f0ba6799d547d6c53, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.01
+      value: 0.006
       objectReference: {fileID: 0}
     - target: {fileID: 5750447519052618856, guid: 58f726e9235ec46f0ba6799d547d6c53, type: 3}
       propertyPath: m_LocalPosition.x

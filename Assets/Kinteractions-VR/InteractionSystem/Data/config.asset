@@ -15,7 +15,7 @@ MonoBehaviour:
   inputManager: {fileID: 0}
   leftHandLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 2048
   rightHandLayer:
     serializedVersion: 2
     m_Bits: 4096
@@ -29,4 +29,4 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 32768
   gameManager: {fileID: 0}
-  inputType: 1
+  inputType: 0
