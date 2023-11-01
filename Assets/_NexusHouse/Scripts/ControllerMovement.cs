@@ -13,6 +13,7 @@ public class ControllerMovement : MonoBehaviour
     Rigidbody rigidBody;
     private float targetRotation;
     private float currentRotationVelocity;
+    public GameObject mainCamera;
 
     void Awake()
     {
@@ -30,9 +31,15 @@ public class ControllerMovement : MonoBehaviour
     void PlayerMove()
     {
         float horizontalInput = Input.GetAxis(horizontalAxisName);
-        float verticalInput = Input.GetAxis(verticalAxisName);
+        float verticalInput = -Input.GetAxis(verticalAxisName);
 
-        Vector3 movement = horizontalInput * transform.right - verticalInput * transform.forward;
+        Vector3 forward = mainCamera.transform.forward;
+        forward.y = 0;
+        forward.Normalize();
+        Vector3 right = mainCamera.transform.right;
+        right.y = 0;
+        right.Normalize();
+        Vector3 movement = horizontalInput * right - verticalInput * forward;
         rigidBody.velocity = movement * moveSpeed;
     }
 

@@ -24,7 +24,7 @@ namespace Kandooz.InteractionSystem.Core
         {
             var obj = Selection.activeGameObject;
             if (obj == null)
-                obj = new GameObject("grabable object");
+                obj = new GameObject("Grabable object");
 
             if (obj.GetComponent<Throwable>()) return;
             obj.AddComponent<Rigidbody>().isKinematic = true;
@@ -36,39 +36,99 @@ namespace Kandooz.InteractionSystem.Core
         [MenuItem("GameObject/Kandooz/MakeLever", priority = 4)]
         public static void MakeLever()
         {
-            Transform parent;
-            var knob = Selection.activeGameObject;
-            if(knob.GetComponent<LeverInteractable>())return;
-            if (knob)
+            GameObject selectedObject = Selection.activeGameObject;
+            if (IsInteractable(selectedObject))
             {
-                parent = new GameObject(knob.name).transform;
-                knob.transform.parent = parent.transform;
-            }
-            else
-            {
-                parent = new GameObject("Lever").transform;
-                var stick = GameObject.CreatePrimitive(PrimitiveType.Capsule).transform;
-                stick.parent = parent;
-                stick.localScale = new Vector3(.1f, .2f, .1f);
-                stick.localPosition = new Vector3(0, .2f, 0);
-                knob = GameObject.CreatePrimitive(PrimitiveType.Sphere);
-                knob.name = "knob";
-                knob.transform.parent = parent;
-                knob.transform.localScale =Vector3.one * .15f;
-                knob.transform.localPosition = new Vector3(0, .45f, 0);
-
-
+                Debug.LogError("Object is already interactable");
+                return;
             }
 
+            if (selectedObject == null)
+            {
+                selectedObject = CreateLever();
+            }
 
-            if (parent.GetComponent<LeverInteractable>()) return;
-            var lever = parent.gameObject.AddComponent<LeverInteractable>();
-            Selection.activeGameObject = parent.gameObject;
+            var leverObject = new GameObject(selectedObject.name).transform;
+            leverObject.transform.position = selectedObject.transform.position;
+            InitializeConstrainedInteractable<LeverInteractable>(leverObject, selectedObject);
+            Selection.activeGameObject = leverObject.gameObject;
         }
 
         [MenuItem("GameObject/Kandooz/MakeDrawer", priority = 3)]
-        public static void MakeLinearallyCOnstrainedInteractable()
+        public static void MakeDrawer()
         {
+            GameObject selectedObject = Selection.activeGameObject;
+            if (IsInteractable(selectedObject))
+            {
+                Debug.LogError("Object is already interactable");
+                return;
+            }
+
+            if (selectedObject == null)
+            {
+                selectedObject = CreateDrawer();
+            }
+
+            var drawerObject = new GameObject(selectedObject.name).transform;
+            InitializeConstrainedInteractable<LinearlyConstrainedInteractable>(drawerObject, selectedObject);
+            Selection.activeGameObject = drawerObject.gameObject;
+        }
+
+        private static GameObject CreateLever()
+        {
+            GameObject selectedObject;
+            selectedObject = new GameObject("Lever");
+            var stick = GameObject.CreatePrimitive(PrimitiveType.Cylinder).transform;
+            stick.parent = selectedObject.transform;
+            stick.localScale = new Vector3(.1f, .2f, .1f);
+            stick.localPosition = new Vector3(0, .2f, 0);
+            var knob = GameObject.CreatePrimitive(PrimitiveType.Sphere);
+            knob.name = "knob";
+            knob.transform.parent = selectedObject.transform;
+            knob.transform.localScale = Vector3.one * .15f;
+            knob.transform.localPosition = new Vector3(0, .45f, 0);
+            return selectedObject;
+        }
+
+        private static T InitializeConstrainedInteractable<T>(Transform interactableTransform, GameObject selectedObject) where T : ConstrainedInteractableBase
+        {
+            interactableTransform.transform.position = selectedObject.transform.position;
+            var constrainedInteractable = interactableTransform.gameObject.AddComponent<T>();
+            var interactableObject = InitializeInteractableObject(selectedObject.transform);
+            interactableObject.parent = interactableTransform;
+            constrainedInteractable.InteractableObject = interactableObject;
+            constrainedInteractable.Initialize();
+            return constrainedInteractable;
+        }
+
+        private static GameObject CreateDrawer()
+        {
+            GameObject selectedObject;
+            selectedObject = new GameObject("Drawer");
+            var body = GameObject.CreatePrimitive(PrimitiveType.Cube).transform;
+            body.localScale = new Vector3(.4f, .05f, .5f);
+            body.localPosition = new Vector3(0, 0, 0);
+            body.transform.parent = selectedObject.transform;
+            var knob = GameObject.CreatePrimitive(PrimitiveType.Sphere);
+            knob.name = "knob";
+            knob.transform.parent = selectedObject.transform;
+            knob.transform.localScale = Vector3.one * .1f;
+            knob.transform.localPosition = new Vector3(0, 0, .25f);
+            return selectedObject;
+        }
+
+        private static bool IsInteractable(GameObject obj)
+        {
+            return obj && obj.GetComponent<InteractableBase>();
+        }
+
+        private static Transform InitializeInteractableObject(Transform obj)
+        {
+            var interactableObject = new GameObject("interactableObject").transform;
+            interactableObject.position = interactableObject.position;
+            interactableObject.localScale = Vector3.one;
+            obj.transform.parent = interactableObject;
+            return interactableObject;
         }
 
         [MenuItem("GameObject/Kandooz/Button", priority = 9)]
