@@ -26,3 +26,48 @@ public class FootstepController : MonoBehaviour
         }
     }
 }
+
+
+
+
+/*using UnityEngine;
+
+public class FootstepController : MonoBehaviour
+{
+    public AudioSource footstepAudioSource;
+    public AudioClip[] footstepSounds;
+
+    private Vector3 lastPosition;
+    private float minDistanceForFootstep = 1.0f;
+    private float distanceTraveled = 0.0f;
+
+    void Start()
+    {
+        lastPosition = transform.position;
+    }
+
+    void Update()
+    {
+        Vector3 currentPosition = transform.position;
+        distanceTraveled += Vector3.Distance(currentPosition, lastPosition);
+        lastPosition = currentPosition;
+
+        if (distanceTraveled >= minDistanceForFootstep)
+        {
+            PlayFootstepSound();
+            distanceTraveled = 0.0f;
+        }
+    }
+
+    void PlayFootstepSound()
+    {
+        if (footstepSounds.Length > 0)
+        {
+            int randomIndex = Random.Range(0, footstepSounds.Length);
+            footstepAudioSource.clip = footstepSounds[randomIndex];
+            footstepAudioSource.Play();
+        }
+    }
+}
+*/
+
