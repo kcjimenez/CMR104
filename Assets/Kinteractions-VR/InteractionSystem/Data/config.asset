@@ -15,18 +15,18 @@ MonoBehaviour:
   inputManager: {fileID: 0}
   leftHandLayer:
     serializedVersion: 2
-    m_Bits: 128
+    m_Bits: 0
   rightHandLayer:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 4096
   interactableLayer:
     serializedVersion: 2
-    m_Bits: 512
+    m_Bits: 8192
   teleportationLayer:
     serializedVersion: 2
-    m_Bits: 1024
+    m_Bits: 16384
   playerLayer:
     serializedVersion: 2
-    m_Bits: 2048
+    m_Bits: 32768
   gameManager: {fileID: 0}
-  inputType: -1
+  inputType: 1
