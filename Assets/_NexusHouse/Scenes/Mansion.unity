@@ -11728,6 +11728,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SBVoice1Source: {fileID: 0}
+  SBVoice1Collider: {fileID: 0}
 --- !u!4 &1114427231
 Transform:
   m_ObjectHideFlags: 0
@@ -25222,6 +25223,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SBVoice1Source: {fileID: 972376608}
+  SBVoice1Collider: {fileID: 2006970318}
 --- !u!65 &2006970318
 BoxCollider:
   m_ObjectHideFlags: 0
