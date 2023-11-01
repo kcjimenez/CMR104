@@ -14,17 +14,20 @@ public class ControllerMovement : MonoBehaviour
     private float targetRotation;
     private float currentRotationVelocity;
     public GameObject mainCamera;
+    CharacterController cc;
+
 
     void Awake()
     {
         rigidBody= GetComponent<Rigidbody>();
+        cc = GetComponent<CharacterController>();
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
         PlayerMove();
-        PlayerRotate();
+        //PlayerRotate();
         //print(Input.GetAxis(rotateAxisName));
     }
 
@@ -40,6 +43,8 @@ public class ControllerMovement : MonoBehaviour
         right.y = 0;
         right.Normalize();
         Vector3 movement = horizontalInput * right - verticalInput * forward;
+        cc.SimpleMove(movement);
+        movement.y = rigidBody.velocity.y;
         rigidBody.velocity = movement * moveSpeed;
     }
 
