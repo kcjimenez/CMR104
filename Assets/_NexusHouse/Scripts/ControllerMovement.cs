@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ControllerMovement : MonoBehaviour
 {
-    public float moveSpeed = 1f;
+    public float moveSpeed;
     public float rotationAngle = 45f;
     public float rotationLerpSpeed = 5f;
     public string horizontalAxisName = "Horizontal";
@@ -43,9 +43,9 @@ public class ControllerMovement : MonoBehaviour
         right.y = 0;
         right.Normalize();
         Vector3 movement = horizontalInput * right - verticalInput * forward;
-        cc.SimpleMove(movement);
+        cc.SimpleMove(movement * moveSpeed);
         movement.y = rigidBody.velocity.y;
-        rigidBody.velocity = movement * moveSpeed;
+        //rigidBody.velocity = movement * moveSpeed;
     }
 
     void PlayerRotate()
