@@ -20,11 +20,11 @@ RenderSettings:
   m_FogDensity: 0.01
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
-  m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
+  m_AmbientSkyColor: {r: 0, g: 0, b: 0, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 0.36
-  m_AmbientMode: 0
+  m_AmbientMode: 3
   m_SubtractiveShadowColor: {r: 0.31083125, g: 0.3708418, b: 0.5188679, a: 1}
   m_SkyboxMaterial: {fileID: 2100000, guid: e391f00234292cc4f935308c11cf0e54, type: 2}
   m_HaloStrength: 0.5
@@ -35,10 +35,10 @@ RenderSettings:
   m_DefaultReflectionMode: 0
   m_DefaultReflectionResolution: 128
   m_ReflectionBounces: 1
-  m_ReflectionIntensity: 1
+  m_ReflectionIntensity: 0.138
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.13040014, g: 0.09601523, b: 0.06181486, a: 1}
+  m_IndirectSpecularColor: {r: 0.017995218, g: 0.013250101, b: 0.00853045, a: 0.138}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -366,6 +366,79 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &246002916
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 619407123}
+    m_Modifications:
+    - target: {fileID: 1588695991787650, guid: 8b52a049bbba76b4187f855da48487cc, type: 3}
+      propertyPath: m_Name
+      value: Wall_1 (28)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4579100096229528, guid: 8b52a049bbba76b4187f855da48487cc, type: 3}
+      propertyPath: m_RootOrder
+      value: 437
+      objectReference: {fileID: 0}
+    - target: {fileID: 4579100096229528, guid: 8b52a049bbba76b4187f855da48487cc, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4579100096229528, guid: 8b52a049bbba76b4187f855da48487cc, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4579100096229528, guid: 8b52a049bbba76b4187f855da48487cc, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4579100096229528, guid: 8b52a049bbba76b4187f855da48487cc, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3.6641812
+      objectReference: {fileID: 0}
+    - target: {fileID: 4579100096229528, guid: 8b52a049bbba76b4187f855da48487cc, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.2250013
+      objectReference: {fileID: 0}
+    - target: {fileID: 4579100096229528, guid: 8b52a049bbba76b4187f855da48487cc, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -9.295
+      objectReference: {fileID: 0}
+    - target: {fileID: 4579100096229528, guid: 8b52a049bbba76b4187f855da48487cc, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071165
+      objectReference: {fileID: 0}
+    - target: {fileID: 4579100096229528, guid: 8b52a049bbba76b4187f855da48487cc, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4579100096229528, guid: 8b52a049bbba76b4187f855da48487cc, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7070972
+      objectReference: {fileID: 0}
+    - target: {fileID: 4579100096229528, guid: 8b52a049bbba76b4187f855da48487cc, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4579100096229528, guid: 8b52a049bbba76b4187f855da48487cc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4579100096229528, guid: 8b52a049bbba76b4187f855da48487cc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 89.998
+      objectReference: {fileID: 0}
+    - target: {fileID: 4579100096229528, guid: 8b52a049bbba76b4187f855da48487cc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8b52a049bbba76b4187f855da48487cc, type: 3}
 --- !u!1 &336661037
 GameObject:
   m_ObjectHideFlags: 0
@@ -997,7 +1070,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!108 &705507994
 Light:
   m_ObjectHideFlags: 0
@@ -1876,8 +1949,8 @@ Light:
   m_Type: 0
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 9
-  m_Range: 10
+  m_Intensity: 30
+  m_Range: 19.19
   m_SpotAngle: 53.439545
   m_InnerSpotAngle: 40.938454
   m_CookieSize: 10
@@ -7102,6 +7175,11 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1044587169}
   m_SourcePrefab: {fileID: 100100000, guid: c6fc6cffd70f64692891390fb389dd93, type: 3}
+--- !u!4 &1744331392 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4579100096229528, guid: 8b52a049bbba76b4187f855da48487cc, type: 3}
+  m_PrefabInstance: {fileID: 246002916}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1823270940
 GameObject:
   m_ObjectHideFlags: 0
@@ -8732,7 +8810,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 2.1185036, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
+  m_ConnectedAnchor: {x: 20.127941, y: 1.4801219, z: 5.6058497}
   serializedVersion: 2
   m_UseSpring: 0
   m_Spring:
@@ -8920,12 +8998,24 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 25176055876017525, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
+      propertyPath: m_Range
+      value: 1.11
+      objectReference: {fileID: 0}
+    - target: {fileID: 25176055876017525, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
       propertyPath: m_Intensity
-      value: 0.0005
+      value: 0.38
+      objectReference: {fileID: 0}
+    - target: {fileID: 134573525861601235, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
+      propertyPath: m_Name
+      value: candle light 3
       objectReference: {fileID: 0}
     - target: {fileID: 206062971877341486, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
       propertyPath: m_Intensity
-      value: 0.0005
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 249253288090155014, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.771
       objectReference: {fileID: 0}
     - target: {fileID: 424273110768228091, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -8944,36 +9034,108 @@ PrefabInstance:
       value: 0.218
       objectReference: {fileID: 0}
     - target: {fileID: 772052881634061504, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
+      propertyPath: m_Range
+      value: 0.87
+      objectReference: {fileID: 0}
+    - target: {fileID: 772052881634061504, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
       propertyPath: m_Intensity
-      value: 0.0005
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 806857159173412132, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
+      propertyPath: m_Name
+      value: wall light
+      objectReference: {fileID: 0}
+    - target: {fileID: 806857159173412132, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 828044329710922425, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
+      propertyPath: m_Name
+      value: candle light 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 902329587817009506, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
+      propertyPath: m_Range
+      value: 0.87
       objectReference: {fileID: 0}
     - target: {fileID: 902329587817009506, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
       propertyPath: m_Intensity
-      value: 0.0005
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 937273963987740806, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
+      propertyPath: m_Name
+      value: wall light
+      objectReference: {fileID: 0}
+    - target: {fileID: 937273963987740806, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1058002065612619223, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
+      propertyPath: m_Range
+      value: 0.87
       objectReference: {fileID: 0}
     - target: {fileID: 1058002065612619223, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
       propertyPath: m_Intensity
-      value: 0.0005
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 1223616093405968743, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
+      propertyPath: m_Range
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1223616093405968743, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
       propertyPath: m_Intensity
-      value: 0.0005
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1309324168386696915, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
+      propertyPath: m_Name
+      value: fireplace light
+      objectReference: {fileID: 0}
+    - target: {fileID: 1458002260569967566, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
+      propertyPath: m_Range
+      value: 1.11
       objectReference: {fileID: 0}
     - target: {fileID: 1458002260569967566, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
       propertyPath: m_Intensity
-      value: 0.0005
+      value: 0.38
       objectReference: {fileID: 0}
     - target: {fileID: 1473674046033832177, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0.6220533
       objectReference: {fileID: 0}
+    - target: {fileID: 1566326611631905128, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
+      propertyPath: m_Name
+      value: candle light 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1595077098672972920, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
+      propertyPath: m_Name
+      value: lantern light
+      objectReference: {fileID: 0}
+    - target: {fileID: 1595077098672972920, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1624987898786135118, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
+      propertyPath: m_Range
+      value: 0.87
+      objectReference: {fileID: 0}
     - target: {fileID: 1624987898786135118, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
       propertyPath: m_Intensity
-      value: 0.0005
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 1659989520695346602, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
+      propertyPath: m_Name
+      value: wall light
+      objectReference: {fileID: 0}
+    - target: {fileID: 1659989520695346602, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1704476323251458222, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
       propertyPath: m_Intensity
-      value: 0.0005
+      value: 0.06
+      objectReference: {fileID: 0}
+    - target: {fileID: 2145594569525019150, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2299860785544749191, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -8986,6 +9148,14 @@ PrefabInstance:
     - target: {fileID: 2302863737181848211, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0.165
+      objectReference: {fileID: 0}
+    - target: {fileID: 2332717047367054245, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2459209149814225480, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2596521523265511336, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -9001,15 +9171,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2972292765957658654, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
       propertyPath: m_Intensity
-      value: 0.0005
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 3159309345052607321, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
       propertyPath: m_Intensity
-      value: 0.0005
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 3338740521208157414, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
       propertyPath: m_Intensity
-      value: 0.0005
+      value: 0.06
       objectReference: {fileID: 0}
     - target: {fileID: 3370535464909087029, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -9023,17 +9193,49 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 0.221
       objectReference: {fileID: 0}
+    - target: {fileID: 3445474529598791728, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
+      propertyPath: m_Name
+      value: lantern light
+      objectReference: {fileID: 0}
+    - target: {fileID: 3445474529598791728, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3502966551001335248, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
+      propertyPath: m_Name
+      value: wall light
+      objectReference: {fileID: 0}
+    - target: {fileID: 3502966551001335248, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3560877013486070054, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
       propertyPath: m_LocalPosition.y
       value: -1.114
       objectReference: {fileID: 0}
+    - target: {fileID: 3755048050965372355, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
+      propertyPath: m_Name
+      value: lantern light
+      objectReference: {fileID: 0}
+    - target: {fileID: 3755048050965372355, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3862331779753224469, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
       propertyPath: m_Intensity
-      value: 0.0005
+      value: 0.06
+      objectReference: {fileID: 0}
+    - target: {fileID: 3937739954204773725, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
+      propertyPath: m_Name
+      value: lantern light
+      objectReference: {fileID: 0}
+    - target: {fileID: 3937739954204773725, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3972447159190157707, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
       propertyPath: m_Intensity
-      value: 0.0005
+      value: 0.06
       objectReference: {fileID: 0}
     - target: {fileID: 4072069885450501626, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -9048,24 +9250,48 @@ PrefabInstance:
       value: 0.088
       objectReference: {fileID: 0}
     - target: {fileID: 4103587556366976508, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
+      propertyPath: m_Range
+      value: 1.11
+      objectReference: {fileID: 0}
+    - target: {fileID: 4103587556366976508, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
       propertyPath: m_Intensity
-      value: 0.0005
+      value: 0.38
+      objectReference: {fileID: 0}
+    - target: {fileID: 4140417407158409050, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
+      propertyPath: m_Name
+      value: candle light 3
       objectReference: {fileID: 0}
     - target: {fileID: 4194504460007123369, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
       propertyPath: m_LocalPosition.y
       value: -0.619
       objectReference: {fileID: 0}
     - target: {fileID: 4492846449849029748, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
+      propertyPath: m_Range
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4492846449849029748, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
       propertyPath: m_Intensity
-      value: 0.0005
+      value: 0.15
       objectReference: {fileID: 0}
     - target: {fileID: 4551684254257683733, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0.101
       objectReference: {fileID: 0}
+    - target: {fileID: 4602015684122489556, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
+      propertyPath: m_Name
+      value: candle light 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4633489564230749792, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
+      propertyPath: m_Range
+      value: 0.87
+      objectReference: {fileID: 0}
     - target: {fileID: 4633489564230749792, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
       propertyPath: m_Intensity
-      value: 0.0005
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 4683128461974886651, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4728555439885890448, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
       propertyPath: m_LocalScale.x
@@ -9082,6 +9308,22 @@ PrefabInstance:
     - target: {fileID: 4728555439885890448, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
       propertyPath: m_LocalPosition.z
       value: -12.482
+      objectReference: {fileID: 0}
+    - target: {fileID: 4740351399318681476, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
+      propertyPath: m_Name
+      value: wall light
+      objectReference: {fileID: 0}
+    - target: {fileID: 4740351399318681476, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4921785019052147110, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
+      propertyPath: m_Name
+      value: wall light
+      objectReference: {fileID: 0}
+    - target: {fileID: 4921785019052147110, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4927844203562135962, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9124,8 +9366,12 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5028791436698400834, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
+      propertyPath: m_Range
+      value: 0.87
+      objectReference: {fileID: 0}
+    - target: {fileID: 5028791436698400834, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
       propertyPath: m_Intensity
-      value: 0.0005
+      value: 0.15
       objectReference: {fileID: 0}
     - target: {fileID: 5315327303542611382, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -9149,11 +9395,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5938114358453404265, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
       propertyPath: m_Intensity
-      value: 0.0005
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6034188310921325581, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6098062769704505002, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
       propertyPath: m_Intensity
-      value: 0.0005
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 6341473680326079463, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -9167,25 +9417,69 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 0.218
       objectReference: {fileID: 0}
+    - target: {fileID: 6374129466938041855, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6804312535124010350, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
+      propertyPath: m_Name
+      value: wall light
+      objectReference: {fileID: 0}
+    - target: {fileID: 6804312535124010350, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6880802235964906593, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0.6220538
       objectReference: {fileID: 0}
     - target: {fileID: 6911244759341440138, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
+      propertyPath: m_Range
+      value: 0.87
+      objectReference: {fileID: 0}
+    - target: {fileID: 6911244759341440138, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
       propertyPath: m_Intensity
-      value: 0.0005
+      value: 0.15
       objectReference: {fileID: 0}
     - target: {fileID: 6924577030013601525, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
       propertyPath: m_Name
       value: house
       objectReference: {fileID: 0}
     - target: {fileID: 6940351918890098064, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
+      propertyPath: m_Range
+      value: 0.06
+      objectReference: {fileID: 0}
+    - target: {fileID: 6940351918890098064, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
       propertyPath: m_Intensity
-      value: 0.0005
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6978592327504173422, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
+      propertyPath: m_Name
+      value: candle light 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7016494052893117384, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
+      propertyPath: m_Range
+      value: 1.11
       objectReference: {fileID: 0}
     - target: {fileID: 7016494052893117384, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
       propertyPath: m_Intensity
-      value: 0.4
+      value: 0.38
+      objectReference: {fileID: 0}
+    - target: {fileID: 7049479624768145968, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
+      propertyPath: m_Name
+      value: candle light 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7123941701321588315, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
+      propertyPath: m_Name
+      value: fireplace light
+      objectReference: {fileID: 0}
+    - target: {fileID: 7128535974835885011, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
+      propertyPath: m_Name
+      value: wall light
+      objectReference: {fileID: 0}
+    - target: {fileID: 7128535974835885011, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7156026868868953212, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -9200,8 +9494,12 @@ PrefabInstance:
       value: 0.221
       objectReference: {fileID: 0}
     - target: {fileID: 7163485371000547895, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
+      propertyPath: m_Range
+      value: 0.87
+      objectReference: {fileID: 0}
+    - target: {fileID: 7163485371000547895, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
       propertyPath: m_Intensity
-      value: 0.0005
+      value: 0.15
       objectReference: {fileID: 0}
     - target: {fileID: 7270155931118861781, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9267,6 +9565,18 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -0.213
       objectReference: {fileID: 0}
+    - target: {fileID: 7372941018723739559, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
+      propertyPath: m_Name
+      value: candle light 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7374684329863501793, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.036
+      objectReference: {fileID: 0}
+    - target: {fileID: 7374684329863501793, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.004
+      objectReference: {fileID: 0}
     - target: {fileID: 7379164174710978903, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0.17
@@ -9279,6 +9589,14 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 0.17
       objectReference: {fileID: 0}
+    - target: {fileID: 7482055818539073799, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
+      propertyPath: m_Range
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7482055818539073799, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
+      propertyPath: m_Intensity
+      value: 0.15
+      objectReference: {fileID: 0}
     - target: {fileID: 7531952636575708311, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
       propertyPath: m_LocalPosition.y
       value: -0.637
@@ -9287,29 +9605,77 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -1.111
       objectReference: {fileID: 0}
+    - target: {fileID: 7622823438119270809, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7715667822826236828, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0.114
       objectReference: {fileID: 0}
     - target: {fileID: 7830157181856862979, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
+      propertyPath: m_Range
+      value: 0.87
+      objectReference: {fileID: 0}
+    - target: {fileID: 7830157181856862979, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
       propertyPath: m_Intensity
-      value: 0.0005
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 7867265415432579815, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
+      propertyPath: m_Name
+      value: wall light
+      objectReference: {fileID: 0}
+    - target: {fileID: 7867265415432579815, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7913179476851915132, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
       propertyPath: m_Intensity
-      value: 0.0005
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7976062761718051272, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
+      propertyPath: m_Range
+      value: 0.06
       objectReference: {fileID: 0}
     - target: {fileID: 7976062761718051272, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
       propertyPath: m_Intensity
-      value: 0.0005
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8013442781217367656, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
+      propertyPath: m_Name
+      value: candle light 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8074880506647842549, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
+      propertyPath: m_Range
+      value: 0.87
       objectReference: {fileID: 0}
     - target: {fileID: 8074880506647842549, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
       propertyPath: m_Intensity
-      value: 0.0005
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 8130995784080277216, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
+      propertyPath: m_Range
+      value: 1.11
       objectReference: {fileID: 0}
     - target: {fileID: 8130995784080277216, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
       propertyPath: m_Intensity
-      value: 0.0005
+      value: 0.38
+      objectReference: {fileID: 0}
+    - target: {fileID: 8165150369677012038, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
+      propertyPath: m_Name
+      value: candle light 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8165150369677012038, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8181869848576849681, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
+      propertyPath: m_Name
+      value: wall light
+      objectReference: {fileID: 0}
+    - target: {fileID: 8181869848576849681, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8196794998257185101, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
       propertyPath: m_LocalScale.x
@@ -9339,9 +9705,13 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 0.17
       objectReference: {fileID: 0}
+    - target: {fileID: 8266212165907640349, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8280333195874793101, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
       propertyPath: m_Intensity
-      value: 0.0005
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 8461327798560061346, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -9364,16 +9734,36 @@ PrefabInstance:
       value: 0.221
       objectReference: {fileID: 0}
     - target: {fileID: 8613543332968417785, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
+      propertyPath: m_Range
+      value: 0.06
+      objectReference: {fileID: 0}
+    - target: {fileID: 8613543332968417785, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
       propertyPath: m_Intensity
-      value: 0.0005
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8694264900701579647, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
+      propertyPath: m_Name
+      value: candle light 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8723256637885097468, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4.06
+      objectReference: {fileID: 0}
+    - target: {fileID: 8731889028963188447, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
+      propertyPath: m_Range
+      value: 0.06
       objectReference: {fileID: 0}
     - target: {fileID: 8731889028963188447, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
       propertyPath: m_Intensity
-      value: 0.0005
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 8795299996483300366, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0.6170534
+      objectReference: {fileID: 0}
+    - target: {fileID: 8809300768076456337, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
+      propertyPath: m_Name
+      value: candle light 1
       objectReference: {fileID: 0}
     - target: {fileID: 8812223952306922150, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -9388,22 +9778,42 @@ PrefabInstance:
       value: 0.218
       objectReference: {fileID: 0}
     - target: {fileID: 8841965032178212544, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
+      propertyPath: m_Range
+      value: 0.87
+      objectReference: {fileID: 0}
+    - target: {fileID: 8841965032178212544, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
       propertyPath: m_Intensity
-      value: 0.0005
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 8876755494974662436, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
+      propertyPath: m_Name
+      value: wall light
+      objectReference: {fileID: 0}
+    - target: {fileID: 8876755494974662436, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8918588848033248817, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
+      propertyPath: m_Range
+      value: 0.06
       objectReference: {fileID: 0}
     - target: {fileID: 8918588848033248817, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
       propertyPath: m_Intensity
-      value: 0.0005
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 8922757473332259034, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
       propertyPath: m_Intensity
-      value: 0.0005
+      value: 0.2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 2145594569525019150, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 4927844203562135962, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
-      insertIndex: 80
+      insertIndex: 65
+      addedObject: {fileID: 1744331392}
+    - targetCorrespondingSourceObject: {fileID: 4927844203562135962, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
+      insertIndex: 81
       addedObject: {fileID: 1308187661}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 2778074794785949026, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
