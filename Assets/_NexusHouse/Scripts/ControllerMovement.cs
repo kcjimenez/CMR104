@@ -6,8 +6,8 @@ using UnityEngine.UIElements;
 public class ControllerMovement : MonoBehaviour
 {
     public float moveSpeed;
-    public float rotationAngle = 45f;
-    public float rotationLerpSpeed = 5f;
+    public float rotationAngle = 5f;
+    public float rotationLerpSpeed = 1f;
     public string horizontalAxisName = "Horizontal";
     public string verticalAxisName = "Vertical";
     public string rotateAxisName = "Rotate";
