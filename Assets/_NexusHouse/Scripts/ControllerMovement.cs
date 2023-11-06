@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class ControllerMovement : MonoBehaviour
 {
@@ -27,7 +28,8 @@ public class ControllerMovement : MonoBehaviour
     void FixedUpdate()
     {
         PlayerMove();
-        //PlayerRotate();
+        PlayerRotate();
+        //PlayerCCRotate(); 
         //print(Input.GetAxis(rotateAxisName));
     }
 
@@ -62,5 +64,10 @@ public class ControllerMovement : MonoBehaviour
 
         float newRotation = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetRotation, ref currentRotationVelocity, rotationLerpSpeed * Time.deltaTime);
         transform.rotation = Quaternion.Euler(0, newRotation, 0);
+    }
+
+    void PlayerCCRotate()
+    {
+        transform.Rotate(0, Input.GetAxis(rotateAxisName) * rotationLerpSpeed, 0);
     }
 }
