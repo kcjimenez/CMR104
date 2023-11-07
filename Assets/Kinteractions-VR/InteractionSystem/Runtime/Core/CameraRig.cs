@@ -103,13 +103,20 @@ namespace Kandooz.InteractionSystem.Core
             var cameraPosition = mainCamera.transform.localPosition;
             cameraPosition.y = 0;
             offsetObject.transform.localPosition = -cameraPosition;
-            await Task.Delay(200);
+            await Task.Delay(100);
             var yRotation = mainCamera.transform.localRotation.eulerAngles.y;
             var angles = offsetObject.localRotation.eulerAngles;
             angles.y = -yRotation;
             offsetObject.localRotation = Quaternion.Euler(angles);
         }
 
+        private void Update()
+        {
+            if (Input.GetKeyDown(KeyCode.R) || Input.GetKeyDown(KeyCode.Joystick1Button0))
+            {
+                ResetPosition();
+            }
+        }
 
     }
 }

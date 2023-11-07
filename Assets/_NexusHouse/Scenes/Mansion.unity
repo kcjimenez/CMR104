@@ -808,7 +808,7 @@ MonoBehaviour:
   m_DefaultControlScheme: 
   m_DefaultActionMap: DetectHeadset
   m_SplitScreenIndex: -1
-  m_Camera: {fileID: 0}
+  m_Camera: {fileID: 1044587173}
 --- !u!114 &378118197 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1058627582426396025, guid: c6fc6cffd70f64692891390fb389dd93, type: 3}
