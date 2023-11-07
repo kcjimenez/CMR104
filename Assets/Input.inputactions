@@ -1,0 +1,34 @@
+{
+    "name": "Input",
+    "maps": [
+        {
+            "name": "DetectHeadset",
+            "id": "66cc60cd-d733-49f7-8dc6-487e61e70024",
+            "actions": [
+                {
+                    "name": "TrackHeadset",
+                    "type": "Value",
+                    "id": "9042e245-0821-4076-a748-bd88d41b3905",
+                    "expectedControlType": "Digital",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "e27626e7-6ed8-4571-97aa-2ea6c6052b3c",
+                    "path": "<OpenXRHmd>/isTracked",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "TrackHeadset",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

@@ -763,6 +763,63 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &378118194
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 378118167}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Actions: {fileID: -944628639613478452, guid: efe6894094c9b864590f61024becbb6d, type: 3}
+  m_NotificationBehavior: 2
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents:
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 378118197}
+        m_TargetAssemblyTypeName: Kandooz.InteractionSystem.Core.CameraRig, Core
+        m_MethodName: ResetPosition
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
+    m_ActionId: 9042e245-0821-4076-a748-bd88d41b3905
+    m_ActionName: DetectHeadset/New action
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: DetectHeadset
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
+--- !u!114 &378118197 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1058627582426396025, guid: c6fc6cffd70f64692891390fb389dd93, type: 3}
+  m_PrefabInstance: {fileID: 1443371516}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 378118167}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83775c5cb9204d848ef66d932afe7625, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &508819102
 GameObject:
   m_ObjectHideFlags: 0
@@ -1707,6 +1764,11 @@ MonoBehaviour:
   head: {fileID: 836623034}
   toggleDistance: 0.2
   toggleCooldown: 2
+--- !u!20 &1044587173 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 2887850340597261717, guid: c6fc6cffd70f64692891390fb389dd93, type: 3}
+  m_PrefabInstance: {fileID: 1443371516}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1114427228
 GameObject:
   m_ObjectHideFlags: 0
@@ -6998,9 +7060,9 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1058627582426396025, guid: c6fc6cffd70f64692891390fb389dd93, type: 3}
-      propertyPath: interactionSystemType
-      value: 1
-      objectReference: {fileID: 0}
+      propertyPath: mainCamera
+      value: 
+      objectReference: {fileID: 1044587173}
     - target: {fileID: 1257243667568488125, guid: c6fc6cffd70f64692891390fb389dd93, type: 3}
       propertyPath: m_LocalRotation.w
       value: 0.7071068
@@ -7086,6 +7148,14 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3927939941507968733, guid: c6fc6cffd70f64692891390fb389dd93, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.9999816
+      objectReference: {fileID: 0}
+    - target: {fileID: 3927939941507968733, guid: c6fc6cffd70f64692891390fb389dd93, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.0060719196
+      objectReference: {fileID: 0}
+    - target: {fileID: 3927939941507968733, guid: c6fc6cffd70f64692891390fb389dd93, type: 3}
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
@@ -7168,6 +7238,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5573294255391847841, guid: c6fc6cffd70f64692891390fb389dd93, type: 3}
       insertIndex: -1
       addedObject: {fileID: 378118193}
+    - targetCorrespondingSourceObject: {fileID: 5573294255391847841, guid: c6fc6cffd70f64692891390fb389dd93, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 378118194}
     - targetCorrespondingSourceObject: {fileID: 1971391169822141921, guid: c6fc6cffd70f64692891390fb389dd93, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1044587163}
