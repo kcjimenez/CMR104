@@ -19,7 +19,7 @@
                 {
                     "name": "",
                     "id": "e27626e7-6ed8-4571-97aa-2ea6c6052b3c",
-                    "path": "<OpenXRHmd>/isTracked",
+                    "path": "<XRInputV1::OpenXR::HeadTrackingOpenXR>/trackingstate",
                     "interactions": "",
                     "processors": "",
                     "groups": "",

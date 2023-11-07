@@ -30,6 +30,8 @@ namespace Kandooz.InteractionSystem.Core
 
         private void Awake()
         {
+            ResetPosition();
+
             switch (interactionSystemType)
             {
                 case InteractionSystemType.TransformBased:
@@ -98,16 +100,16 @@ namespace Kandooz.InteractionSystem.Core
             return poseController;
         }
 
-        public async void ResetPosition()
+        public void ResetPosition()
         {
             var cameraPosition = mainCamera.transform.localPosition;
             cameraPosition.y = 0;
             offsetObject.transform.localPosition = -cameraPosition;
-            await Task.Delay(100);
+            /*await Task.Delay(100);
             var yRotation = mainCamera.transform.localRotation.eulerAngles.y;
             var angles = offsetObject.localRotation.eulerAngles;
             angles.y = -yRotation;
-            offsetObject.localRotation = Quaternion.Euler(angles);
+            offsetObject.localRotation = Quaternion.Euler(angles);*/
         }
 
         private void Update()
