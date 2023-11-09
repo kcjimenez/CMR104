@@ -914,6 +914,33 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &571427298 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5087192907388057112, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
+  m_PrefabInstance: {fileID: 2132949277}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &571427303
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 571427298}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 93ef01895993a4443b36aba66bda4070, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &705273864
 GameObject:
   m_ObjectHideFlags: 0
@@ -8902,6 +8929,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7913156216010496900, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2140887385}
+    - targetCorrespondingSourceObject: {fileID: 5087192907388057112, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 571427303}
   m_SourcePrefab: {fileID: 100100000, guid: 3ca25a4482960f44d804f9442adb1a5f, type: 3}
 --- !u!1 &2140887379 stripped
 GameObject:
@@ -8972,10 +9002,34 @@ MonoBehaviour:
         m_CallState: 2
   onHoverStart:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 571427303}
+        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+        m_MethodName: SetTrigger
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: selected
+          m_BoolArgument: 0
+        m_CallState: 2
   onHoverEnd:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 571427303}
+        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+        m_MethodName: SetTrigger
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: unselected
+          m_BoolArgument: 0
+        m_CallState: 2
   onActivated:
     m_PersistentCalls:
       m_Calls: []
