@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UIElements;
 
 namespace Kandooz.InteractionSystem.Interactions
 {
@@ -15,26 +16,29 @@ namespace Kandooz.InteractionSystem.Interactions
             if (!IsSelected) return;
             var direction = CurrentInteractor.transform.position-transform.position;
             direction = Vector3.ProjectOnPlane(direction, -transform.right).normalized;
+            var angle = -Vector3.SignedAngle(direction, transform.up, transform.right);
             if (limited)
             {
-                var angle = Vector3.SignedAngle(direction, transform.up, transform.right);
                 if (angle > limit / 2)
                 {
-                    var radLimit = limit / 2 * Mathf.Deg2Rad;
-                    direction = new Vector3(0, Mathf.Cos(radLimit),-Mathf.Sin(radLimit));
-                    direction = transform.TransformDirection(direction);
+                    angle = limit / 2;
+                    //var radLimit = limit / 2 * Mathf.Deg2Rad;
+                    // direction = new Vector3(0, Mathf.Cos(radLimit),-Mathf.Sin(radLimit));
+                    // direction = transform.TransformDirection(direction);
                 }
 
                 if (angle < -limit / 2)
                 {
-                    var radLimit = -limit / 2 * Mathf.Deg2Rad;
-                    direction = new Vector3(0, Mathf.Cos(radLimit),-Mathf.Sin(radLimit));
-                    direction = transform.TransformDirection(direction);
+                    angle = -limit / 2;
+                    //var radLimit = -limit / 2 * Mathf.Deg2Rad;
+                    // direction = new Vector3(0, Mathf.Cos(radLimit),-Mathf.Sin(radLimit));
+                    // direction = transform.TransformDirection(direction);
                 }
             }
 
             Debug.DrawLine(transform.position, direction * 10 + transform.position);
-            interactableObject.transform.up = (direction);
+            interactableObject.transform.localRotation= Quaternion.Euler(angle,0,0);
+            
         }
 
     }
