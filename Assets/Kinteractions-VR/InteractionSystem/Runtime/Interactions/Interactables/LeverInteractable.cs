@@ -14,7 +14,7 @@ namespace Kandooz.InteractionSystem.Interactions
         private void Update()
         {
             if (!IsSelected) return;
-            var direction = CurrentInteractor.transform.position-transform.position;
+            var direction = CurrentInteractor.transform.position- transform.position;
             direction = Vector3.ProjectOnPlane(direction, -transform.right).normalized;
             var angle = -Vector3.SignedAngle(direction, transform.up, transform.right);
             if (limited)
@@ -22,17 +22,11 @@ namespace Kandooz.InteractionSystem.Interactions
                 if (angle > limit / 2)
                 {
                     angle = limit / 2;
-                    //var radLimit = limit / 2 * Mathf.Deg2Rad;
-                    // direction = new Vector3(0, Mathf.Cos(radLimit),-Mathf.Sin(radLimit));
-                    // direction = transform.TransformDirection(direction);
                 }
 
                 if (angle < -limit / 2)
                 {
                     angle = -limit / 2;
-                    //var radLimit = -limit / 2 * Mathf.Deg2Rad;
-                    // direction = new Vector3(0, Mathf.Cos(radLimit),-Mathf.Sin(radLimit));
-                    // direction = transform.TransformDirection(direction);
                 }
             }
 
