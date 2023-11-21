@@ -45,8 +45,12 @@ public class ControllerMovement : MonoBehaviour
         right.y = 0;
         right.Normalize();
         Vector3 movement = horizontalInput * right - verticalInput * forward;
-        cc.SimpleMove(movement * moveSpeed);
         movement.y = rigidBody.velocity.y;
+      
+        if(!(Input.GetKey(KeyCode.JoystickButton8) || Input.GetKeyUp(KeyCode.JoystickButton8)))
+        {
+            cc.SimpleMove(movement * moveSpeed);
+        }
         //rigidBody.velocity = movement * moveSpeed;
     }
 
