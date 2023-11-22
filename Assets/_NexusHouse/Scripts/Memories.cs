@@ -15,7 +15,7 @@ public class Memories : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             onMemoryStart.Invoke();
-            await Task.Delay(memoryDuration);
+            await Task.Delay(memoryDuration * 1000);
             onMemoryEnd.Invoke();
         }
     }
