@@ -1,5 +1,7 @@
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace Kinteractions_VR.Locomotion.Runtime
 {
@@ -16,6 +18,8 @@ namespace Kinteractions_VR.Locomotion.Runtime
         [SerializeField] private Transform rightHandPointer;
         [SerializeField] private Transform pointer;
         [SerializeField] private string teleportationTag;
+        [SerializeField] private UnityEvent onTeleportationStarted;
+        [SerializeField] private UnityEvent onTeleportationEnded;
 
         private Vector3 gravityVector = Vector3.down;
         private bool showCurve = false;
@@ -36,13 +40,16 @@ namespace Kinteractions_VR.Locomotion.Runtime
             this.pointer = pointer;
             showCurve = true;
             lineRenderer.enabled = true;
+            onTeleportationStarted.Invoke();
         }
 
-        private void OnTeleportationButtonUp()
+        private async void OnTeleportationButtonUp()
         {
             showCurve = false;
             lineRenderer.enabled = false;
             this.transform.position = teleportationPoint;
+            await Task.Delay(200);
+            onTeleportationEnded.Invoke();
         }
 
         private void Update()

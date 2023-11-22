@@ -52,7 +52,7 @@ namespace Kandooz.InteractionSystem.Interactions
                     ChangeInteractable(null);
             }
         }
-        public override void OnHoverEnd()
+        protected override void OnHoverEnd()
         {
             base.OnHoverEnd();
             currentCollider = null;

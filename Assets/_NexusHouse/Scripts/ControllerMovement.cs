@@ -11,16 +11,15 @@ public class ControllerMovement : MonoBehaviour
     public string horizontalAxisName = "Horizontal";
     public string verticalAxisName = "Vertical";
     public string rotateAxisName = "Rotate";
-    Rigidbody rigidBody;
     private float targetRotation;
     private float currentRotationVelocity;
+    private bool justRotated;
     public GameObject mainCamera;
     CharacterController cc;
 
 
     void Awake()
     {
-        rigidBody= GetComponent<Rigidbody>();
         cc = GetComponent<CharacterController>();
     }
 
@@ -45,8 +44,7 @@ public class ControllerMovement : MonoBehaviour
         right.y = 0;
         right.Normalize();
         Vector3 movement = horizontalInput * right - verticalInput * forward;
-        movement.y = rigidBody.velocity.y;
-      
+        
         if(!(Input.GetKey(KeyCode.JoystickButton8) || Input.GetKeyUp(KeyCode.JoystickButton8)))
         {
             cc.SimpleMove(movement * moveSpeed);
@@ -57,17 +55,22 @@ public class ControllerMovement : MonoBehaviour
     void PlayerRotate()
     {
         float rotationInput = Input.GetAxis(rotateAxisName);
+        if(Mathf.Abs(rotationInput)>.3f)
+        {
+            if(justRotated == false)
+            {
+                float sign = Mathf.Sign(rotationInput);
+                transform.Rotate(0, 30 * sign, 0);
+                justRotated = true;
+            }
+        }
+        else
+        {
+            justRotated = false;
+        }
         //float rotationAmount = rotationInput * rotationSpeed * Time.fixedDeltaTime;
         //transform.Rotate(Vector3.up, rotationAmount);
-
-        if(rotationInput != 0)
-        {
-            int rotationSteps = Mathf.RoundToInt(rotationInput);
-            targetRotation = Mathf.Round(targetRotation / rotationAngle) * rotationAngle + rotationSteps * rotationAngle;
-        }
-
-        float newRotation = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetRotation, ref currentRotationVelocity, rotationLerpSpeed * Time.deltaTime);
-        transform.rotation = Quaternion.Euler(0, newRotation, 0);
+        
     }
 
     void PlayerCCRotate()

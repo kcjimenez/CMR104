@@ -2,7 +2,6 @@ using System.Threading.Tasks;
 using Kandooz.InteractionSystem.Animations;
 using Kandooz.InteractionSystem.Interactions;
 using UnityEngine;
-using UnityEngine.InputSystem;
 
 namespace Kandooz.InteractionSystem.Core
 {
@@ -114,29 +113,10 @@ namespace Kandooz.InteractionSystem.Core
         }
         private void Update()
         {
-            if (Input.GetKeyDown(KeyCode.R) || Input.GetKeyDown(KeyCode.Joystick1Button1))
+            if (Input.GetKeyDown(KeyCode.R) || Input.GetKeyDown(KeyCode.Joystick1Button0))
             {
                 ResetPosition();
             }
         }
-
-        public void OnHeadsetDetected(InputAction.CallbackContext ctx)
-        {
-            var state = ctx.ReadValue<bool>();
-            if (state) 
-            { 
-               if (isDetected == false)
-                {
-                    ResetPosition();
-                    isDetected = true;
-                }
-            }
-            else
-            {
-                isDetected= false;
-            }
-        }
-
-        bool isDetected = false;
     }
 }

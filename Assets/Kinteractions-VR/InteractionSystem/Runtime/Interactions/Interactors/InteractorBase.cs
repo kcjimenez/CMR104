@@ -22,7 +22,7 @@ namespace Kandooz.InteractionSystem.Interactions
         public Hand Hand => hand;
         public bool IsInteracting => isInteracting;
         public event Action onHoverEnd;
-        public InteractableBase CurrentInteractable => currentInteractable;
+
         public void ToggleHandModel(bool enable) => hand.ToggleRenderer(enable);
 
         private void Awake()
@@ -102,7 +102,7 @@ namespace Kandooz.InteractionSystem.Interactions
             };
         }
 
-        public virtual void OnHoverEnd()
+        protected virtual void OnHoverEnd()
         {
             if (currentInteractable.CurrentState != InteractionState.Hovering) return;
             currentInteractable.OnStateChanged(InteractionState.None, this);
