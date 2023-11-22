@@ -113,7 +113,7 @@ namespace Kandooz.InteractionSystem.Core
         }
         private void Update()
         {
-            if (Input.GetKeyDown(KeyCode.R) || Input.GetKeyDown(KeyCode.Joystick1Button0))
+            if (Input.GetKeyDown(KeyCode.R) || Input.GetKeyDown(KeyCode.Joystick1Button1))
             {
                 ResetPosition();
             }
