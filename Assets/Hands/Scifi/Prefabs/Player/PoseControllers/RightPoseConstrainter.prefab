@@ -52,6 +52,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 3969377799214620826, guid: 58f726e9235ec46f0ba6799d547d6c53, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4354173663551008262, guid: 58f726e9235ec46f0ba6799d547d6c53, type: 3}
       propertyPath: hand
       value: 2
@@ -364,7 +368,8 @@ PrefabInstance:
     - {fileID: 5753348695727827619, guid: 58f726e9235ec46f0ba6799d547d6c53, type: 3}
     - {fileID: 6484474665013571338, guid: 58f726e9235ec46f0ba6799d547d6c53, type: 3}
     - {fileID: 3389586507960522566, guid: 58f726e9235ec46f0ba6799d547d6c53, type: 3}
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 3969377799214620826, guid: 58f726e9235ec46f0ba6799d547d6c53, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 6041003032950305879, guid: 58f726e9235ec46f0ba6799d547d6c53, type: 3}
