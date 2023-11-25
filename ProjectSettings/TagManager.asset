@@ -7,6 +7,7 @@ TagManager:
   - Chip
   - Floor
   - VRHand
+  - RightIndex
   layers:
   - Default
   - TransparentFX
