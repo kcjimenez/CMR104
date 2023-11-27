@@ -14,6 +14,8 @@ namespace Kandooz.InteractionSystem.Interactions
         [SerializeField] private UnityEvent onClose;
         [SerializeField] private UnityEvent onMiddle;
 
+        [SerializeField] private Animator wallAnimator; // Reference to the wall's Animator component
+
         private float oldNormalizedAngle;
         private float currentNormalizedAngle;
 
@@ -22,9 +24,9 @@ namespace Kandooz.InteractionSystem.Interactions
             oldNormalizedAngle = currentNormalizedAngle = 0;
         }
 
-        protected override void Activate(){}
-        protected override void StartHover(){}
-        protected override void EndHover(){}
+        protected override void Activate() { }
+        protected override void StartHover() { }
+        protected override void EndHover() { }
 
         private void Update()
         {
@@ -59,6 +61,7 @@ namespace Kandooz.InteractionSystem.Interactions
             {
                 onAngleChanged.Invoke();
                 oldNormalizedAngle = currentNormalizedAngle;
+
                 if (currentNormalizedAngle > .9f)
                 {
                     onOpen.Invoke();
@@ -67,6 +70,17 @@ namespace Kandooz.InteractionSystem.Interactions
                 if (currentNormalizedAngle < -.9f)
                 {
                     onClose.Invoke();
+
+                    // Trigger the wall 
+                    if (wallAnimator != null)
+                    {
+                        wallAnimator.SetTrigger("MoveDown");
+                        Debug.Log("Wall animation triggered");
+                    }
+                    else
+                    {
+                        Debug.LogError("Wall Animator is null!");
+                    }
                 }
 
                 if (currentNormalizedAngle < .1f && currentNormalizedAngle > -.1f)
