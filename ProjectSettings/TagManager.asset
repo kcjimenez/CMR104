@@ -8,6 +8,7 @@ TagManager:
   - Floor
   - VRHand
   - RightIndex
+  - Voice2Trigger
   layers:
   - Default
   - TransparentFX

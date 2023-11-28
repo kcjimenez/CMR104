@@ -394,6 +394,10 @@ PrefabInstance:
       value: 13
       objectReference: {fileID: 0}
     - target: {fileID: -6250076149019478384, guid: 8cea503c286700149876adea76be694c, type: 3}
+      propertyPath: m_Name
+      value: screen
+      objectReference: {fileID: 0}
+    - target: {fileID: -6250076149019478384, guid: 8cea503c286700149876adea76be694c, type: 3}
       propertyPath: m_Layer
       value: 13
       objectReference: {fileID: 0}
@@ -601,6 +605,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 8cea503c286700149876adea76be694c, type: 3}
       insertIndex: -1
       addedObject: {fileID: 6670075260406154489}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 8cea503c286700149876adea76be694c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8098778008482519170}
     - targetCorrespondingSourceObject: {fileID: -6250076149019478384, guid: 8cea503c286700149876adea76be694c, type: 3}
       insertIndex: -1
       addedObject: {fileID: 8711775124705158044}
@@ -639,6 +646,34 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2.559826, y: 0.33841252, z: 1.4375076}
   m_Center: {x: -0.011339188, y: 0.1915558, z: 0.0019960403}
+--- !u!114 &8098778008482519170
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5403033879676546697}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2f6c94c82b99dc43aec578949040f18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onDialogueTriggered:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 211543214229661998}
+        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+        m_MethodName: SetTrigger
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: redLightBlink
+          m_BoolArgument: 0
+        m_CallState: 1
+  Voice2Triggered: 0
 --- !u!1 &8032525787699946824 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -6250076149019478384, guid: 8cea503c286700149876adea76be694c, type: 3}

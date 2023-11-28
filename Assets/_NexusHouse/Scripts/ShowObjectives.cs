@@ -62,5 +62,6 @@ public class ShowObjectives : MonoBehaviour
     public void CheckMissionBrief()
     {
         currentObjective.text = "Press on the Chrono-Resonator to check the Mission Brief";
+        currentObjective.enabled = false;
     }
 }
