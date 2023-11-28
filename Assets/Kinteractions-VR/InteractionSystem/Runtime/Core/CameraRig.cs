@@ -2,6 +2,7 @@ using System.Threading.Tasks;
 using Kandooz.InteractionSystem.Animations;
 using Kandooz.InteractionSystem.Interactions;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 namespace Kandooz.InteractionSystem.Core
 {
@@ -102,6 +103,7 @@ namespace Kandooz.InteractionSystem.Core
 
         public async void ResetPosition()
         {
+            Debug.Log("reset");
             var cameraPosition = mainCamera.transform.localPosition;
             cameraPosition.y = 0;
             offsetObject.transform.localPosition = -cameraPosition;
@@ -110,6 +112,15 @@ namespace Kandooz.InteractionSystem.Core
             var angles = offsetObject.localRotation.eulerAngles;
             angles.y = -yRotation;
             offsetObject.localRotation = Quaternion.Euler(angles);
+        }
+        public void OnHeadsetDetected(InputAction.CallbackContext ctx)
+        {
+            Debug.Log($"<color=red>{ctx.ReadValueAsButton()} </color>");
+            if (ctx.ReadValueAsButton())
+            {
+                ResetPosition();
+                Debug.Log("reset position working");
+            }
         }
         private void Update()
         {

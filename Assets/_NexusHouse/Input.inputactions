@@ -7,9 +7,9 @@
             "actions": [
                 {
                     "name": "TrackHeadset",
-                    "type": "Value",
+                    "type": "Button",
                     "id": "9042e245-0821-4076-a748-bd88d41b3905",
-                    "expectedControlType": "Digital",
+                    "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
@@ -19,7 +19,7 @@
                 {
                     "name": "",
                     "id": "e27626e7-6ed8-4571-97aa-2ea6c6052b3c",
-                    "path": "<XRInputV1::OpenXR::HeadTrackingOpenXR>/trackingstate",
+                    "path": "<XRHMD>/isTracked",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
