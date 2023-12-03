@@ -7,6 +7,7 @@ using UnityEngine;
 public class ShowObjectives : MonoBehaviour
 {
     [SerializeField] TMP_Text currentObjective;
+    [SerializeField] TMP_Text pressX;
     public int collectedClues;
     bool isCCObjectiveActive = true;
 
@@ -22,6 +23,7 @@ public class ShowObjectives : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.JoystickButton2))
         {
+            pressX.enabled = false;
             Debug.Log("show objective");
             currentObjective.enabled = true;
 
@@ -51,7 +53,7 @@ public class ShowObjectives : MonoBehaviour
         {
             currentObjective.text = "Collect Clues (" + collectedClues + "/3)";
 
-            if(collectedClues == 3)
+            if(collectedClues >= 3)
             {
                 await Task.Delay(6 * 1000);
                 isCCObjectiveActive = false;
