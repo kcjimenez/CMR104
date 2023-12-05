@@ -2127,11 +2127,60 @@ PrefabInstance:
       propertyPath: m_Name
       value: chronores
       objectReference: {fileID: 0}
+    - target: {fileID: 8847615354716051457, guid: 07f484df234538941adf5480852cdbb1, type: 3}
+      propertyPath: onVideoEnd.m_PersistentCalls.m_Calls.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8847615354716051457, guid: 07f484df234538941adf5480852cdbb1, type: 3}
+      propertyPath: onVideoEnd.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8847615354716051457, guid: 07f484df234538941adf5480852cdbb1, type: 3}
+      propertyPath: onVideoEnd.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1260719007970699032}
+    - target: {fileID: 8847615354716051457, guid: 07f484df234538941adf5480852cdbb1, type: 3}
+      propertyPath: onVideoEnd.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8847615354716051457, guid: 07f484df234538941adf5480852cdbb1, type: 3}
+      propertyPath: onVideoEnd.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: Notify
+      objectReference: {fileID: 0}
+    - target: {fileID: 8847615354716051457, guid: 07f484df234538941adf5480852cdbb1, type: 3}
+      propertyPath: onVideoEnd.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: CustomDialogue, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8847615354716051457, guid: 07f484df234538941adf5480852cdbb1, type: 3}
+      propertyPath: onVideoEnd.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6949561354518955273, guid: 07f484df234538941adf5480852cdbb1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1260719007970699032}
   m_SourcePrefab: {fileID: 100100000, guid: 07f484df234538941adf5480852cdbb1, type: 3}
+--- !u!1 &2133777717192395546 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6949561354518955273, guid: 07f484df234538941adf5480852cdbb1, type: 3}
+  m_PrefabInstance: {fileID: 9074048170241494547}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1260719007970699032
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2133777717192395546}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 455321ba661110447966883f6e05b96a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectName: EmptyCameraRig
 --- !u!4 &4349844743815051808 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4733492130494100531, guid: 07f484df234538941adf5480852cdbb1, type: 3}
