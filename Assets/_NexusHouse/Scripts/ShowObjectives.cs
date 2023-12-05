@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using System.Threading.Tasks;
 using UnityEngine;
+using UnityEditor;
 
 public class ShowObjectives : MonoBehaviour
 {
@@ -55,6 +56,9 @@ public class ShowObjectives : MonoBehaviour
 
             if(collectedClues >= 3)
             {
+                var obj = GameObject.Find("SBVoice2 Trigger");
+                Debug.Log("trigger found");
+                obj.GetComponent<BoxCollider>().enabled = true;
                 await Task.Delay(6 * 1000);
                 isCCObjectiveActive = false;
             }
