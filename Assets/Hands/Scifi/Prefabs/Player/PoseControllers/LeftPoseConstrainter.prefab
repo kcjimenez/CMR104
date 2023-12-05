@@ -450,6 +450,7 @@ GameObject:
   - component: {fileID: 2393145034796800365}
   - component: {fileID: 5364813254919610930}
   - component: {fileID: 4354173663551008262}
+  - component: {fileID: 2835236424058850245}
   m_Layer: 7
   m_Name: LeftPoseConstrainter
   m_TagString: Player
@@ -523,6 +524,45 @@ MonoBehaviour:
   hand: 1
   config: {fileID: 11400000, guid: a98f0f16ca30a4ce2a4102435d346e0c, type: 2}
   handModel: {fileID: 5750447519049928060}
+--- !u!114 &2835236424058850245
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6041003032950305879}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9732a833cafd91742989aadfe39e8aff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onCalled:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 9152145479206348605}
+        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+        m_MethodName: SetTrigger
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: redLightBlink
+          m_BoolArgument: 0
+        m_CallState: 1
+      - m_Target: {fileID: 9123654792677180270}
+        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+        m_MethodName: SetTrigger
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: redLightBlink
+          m_BoolArgument: 0
+        m_CallState: 1
 --- !u!1 &6669150320575249259
 GameObject:
   m_ObjectHideFlags: 0
@@ -2195,6 +2235,66 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 13
       objectReference: {fileID: 0}
+    - target: {fileID: 8847615354716051457, guid: 07f484df234538941adf5480852cdbb1, type: 3}
+      propertyPath: onVideoStart.m_PersistentCalls.m_Calls.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8847615354716051457, guid: 07f484df234538941adf5480852cdbb1, type: 3}
+      propertyPath: onVideoStart.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8847615354716051457, guid: 07f484df234538941adf5480852cdbb1, type: 3}
+      propertyPath: onVideoStart.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8847615354716051457, guid: 07f484df234538941adf5480852cdbb1, type: 3}
+      propertyPath: onVideoStart.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 9152145479206348605}
+    - target: {fileID: 8847615354716051457, guid: 07f484df234538941adf5480852cdbb1, type: 3}
+      propertyPath: onVideoStart.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 9123654792677180270}
+    - target: {fileID: 8847615354716051457, guid: 07f484df234538941adf5480852cdbb1, type: 3}
+      propertyPath: onVideoStart.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8847615354716051457, guid: 07f484df234538941adf5480852cdbb1, type: 3}
+      propertyPath: onVideoStart.m_PersistentCalls.m_Calls.Array.data[3].m_CallState
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8847615354716051457, guid: 07f484df234538941adf5480852cdbb1, type: 3}
+      propertyPath: onVideoStart.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: SetTrigger
+      objectReference: {fileID: 0}
+    - target: {fileID: 8847615354716051457, guid: 07f484df234538941adf5480852cdbb1, type: 3}
+      propertyPath: onVideoStart.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: SetTrigger
+      objectReference: {fileID: 0}
+    - target: {fileID: 8847615354716051457, guid: 07f484df234538941adf5480852cdbb1, type: 3}
+      propertyPath: onVideoStart.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: UnityEngine.Animator, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8847615354716051457, guid: 07f484df234538941adf5480852cdbb1, type: 3}
+      propertyPath: onVideoStart.m_PersistentCalls.m_Calls.Array.data[3].m_TargetAssemblyTypeName
+      value: UnityEngine.Animator, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8847615354716051457, guid: 07f484df234538941adf5480852cdbb1, type: 3}
+      propertyPath: onVideoStart.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_StringArgument
+      value: stopBlinking
+      objectReference: {fileID: 0}
+    - target: {fileID: 8847615354716051457, guid: 07f484df234538941adf5480852cdbb1, type: 3}
+      propertyPath: onVideoStart.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_StringArgument
+      value: stopBlinking
+      objectReference: {fileID: 0}
+    - target: {fileID: 8847615354716051457, guid: 07f484df234538941adf5480852cdbb1, type: 3}
+      propertyPath: onVideoStart.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8847615354716051457, guid: 07f484df234538941adf5480852cdbb1, type: 3}
+      propertyPath: onVideoStart.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 8921855656353107741, guid: 07f484df234538941adf5480852cdbb1, type: 3}
       propertyPath: m_Layer
       value: 13
@@ -2211,5 +2311,15 @@ PrefabInstance:
 --- !u!4 &4349844743815051808 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4733492130494100531, guid: 07f484df234538941adf5480852cdbb1, type: 3}
+  m_PrefabInstance: {fileID: 9074048170241494547}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &9123654792677180270 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 247914642835721597, guid: 07f484df234538941adf5480852cdbb1, type: 3}
+  m_PrefabInstance: {fileID: 9074048170241494547}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &9152145479206348605 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 211543214229661998, guid: 07f484df234538941adf5480852cdbb1, type: 3}
   m_PrefabInstance: {fileID: 9074048170241494547}
   m_PrefabAsset: {fileID: 0}
