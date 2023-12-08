@@ -8,9 +8,10 @@ public class VolumeWeight : MonoBehaviour
 {
     Volume volume;
     private float timer;
-    public float transition = 0.01f;
+    public float transition = 2f;
     float t = 0;
-
+    bool activated = false;
+     
     void Start()
     {
         volume = gameObject.GetComponent<Volume>();
@@ -18,17 +19,28 @@ public class VolumeWeight : MonoBehaviour
 
     void Update()
     {
+        if(activated)
+        {
+            t += Time.deltaTime * transition;
+        }
+
+        else
+        {
+            t -= Time.deltaTime * transition;
+        }
+        t=Mathf.Clamp(t,0,1);
+        volume.weight = Mathf.Lerp(0f, 1f, t);
     }
 
     public void IncreaseVolumeWeight()
     {
-        volume.weight = Mathf.Lerp(0f, 1f, t);
+        activated= true;
         //t += 0.5f * Time.deltaTime;
     }
 
     public void DecreaseVolumeWeight()
     {
-        volume.weight = Mathf.Lerp(1f, 0f, t);
+        activated= false;
         //t += 0.5f * Time.deltaTime;
     }
 }
