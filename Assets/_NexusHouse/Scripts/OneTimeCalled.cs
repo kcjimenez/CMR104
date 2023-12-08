@@ -6,8 +6,13 @@ using UnityEngine.Events;
 public class OneTimeCalled : MonoBehaviour
 {
     public UnityEvent onCalled;
+    bool hasBeenCalled = false;
     public void CallOnce()
     {
-        onCalled.Invoke();
+        if(!hasBeenCalled)
+        {
+            onCalled.Invoke();
+            hasBeenCalled = true;
+        }
     }
 }
