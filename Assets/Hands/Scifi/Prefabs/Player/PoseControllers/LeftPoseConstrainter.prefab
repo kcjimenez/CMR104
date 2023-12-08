@@ -450,7 +450,7 @@ GameObject:
   - component: {fileID: 2393145034796800365}
   - component: {fileID: 5364813254919610930}
   - component: {fileID: 4354173663551008262}
-  - component: {fileID: 2835236424058850245}
+  - component: {fileID: 6600009335043282832}
   m_Layer: 7
   m_Name: LeftPoseConstrainter
   m_TagString: Player
@@ -524,7 +524,7 @@ MonoBehaviour:
   hand: 1
   config: {fileID: 11400000, guid: a98f0f16ca30a4ce2a4102435d346e0c, type: 2}
   handModel: {fileID: 5750447519049928060}
---- !u!114 &2835236424058850245
+--- !u!114 &6600009335043282832
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -533,10 +533,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 6041003032950305879}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9732a833cafd91742989aadfe39e8aff, type: 3}
+  m_Script: {fileID: 11500000, guid: 7746f04550fe3dd4bb3259542bb23b6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  onCalled:
+  onEventCalled:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 9152145479206348605}
@@ -563,6 +563,7 @@ MonoBehaviour:
           m_StringArgument: redLightBlink
           m_BoolArgument: 0
         m_CallState: 1
+  customEvent: {fileID: 11400000, guid: 49da6d94667f57641ba5e8b56aadf493, type: 2}
 --- !u!1 &6669150320575249259
 GameObject:
   m_ObjectHideFlags: 0
