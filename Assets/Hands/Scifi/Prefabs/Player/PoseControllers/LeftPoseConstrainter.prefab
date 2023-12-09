@@ -2128,46 +2128,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: chronores
       objectReference: {fileID: 0}
-    - target: {fileID: 8847615354716051457, guid: 07f484df234538941adf5480852cdbb1, type: 3}
-      propertyPath: onVideoEnd.m_PersistentCalls.m_Calls.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8847615354716051457, guid: 07f484df234538941adf5480852cdbb1, type: 3}
-      propertyPath: onVideoEnd.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8847615354716051457, guid: 07f484df234538941adf5480852cdbb1, type: 3}
-      propertyPath: onVideoEnd.m_PersistentCalls.m_Calls.Array.data[1].m_Target
-      value: 
-      objectReference: {fileID: 11400000, guid: 0088f5d8d6a181742886a59f6f286dd8, type: 2}
-    - target: {fileID: 8847615354716051457, guid: 07f484df234538941adf5480852cdbb1, type: 3}
-      propertyPath: onVideoEnd.m_PersistentCalls.m_Calls.Array.data[2].m_Target
-      value: 
-      objectReference: {fileID: 11400000, guid: 0088f5d8d6a181742886a59f6f286dd8, type: 2}
-    - target: {fileID: 8847615354716051457, guid: 07f484df234538941adf5480852cdbb1, type: 3}
-      propertyPath: onVideoEnd.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8847615354716051457, guid: 07f484df234538941adf5480852cdbb1, type: 3}
-      propertyPath: onVideoEnd.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: CallCustomEvent
-      objectReference: {fileID: 0}
-    - target: {fileID: 8847615354716051457, guid: 07f484df234538941adf5480852cdbb1, type: 3}
-      propertyPath: onVideoEnd.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
-      value: CallCustomEvent
-      objectReference: {fileID: 0}
-    - target: {fileID: 8847615354716051457, guid: 07f484df234538941adf5480852cdbb1, type: 3}
-      propertyPath: onVideoEnd.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
-      value: CustomEvent, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 8847615354716051457, guid: 07f484df234538941adf5480852cdbb1, type: 3}
-      propertyPath: onVideoEnd.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
-      value: CustomEvent, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 8847615354716051457, guid: 07f484df234538941adf5480852cdbb1, type: 3}
-      propertyPath: onVideoEnd.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
