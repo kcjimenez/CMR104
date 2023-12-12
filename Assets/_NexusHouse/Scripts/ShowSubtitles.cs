@@ -28,4 +28,16 @@ public class ShowSubtitles : MonoBehaviour
         await Task.Delay(4 * 1000);
         currentSubtitle.enabled = false;
     }
+
+    public async void SBVoice1Subtitles()
+    {
+        currentSubtitle.enabled = true;
+        currentSubtitle.text = "Hmm… This looks like the right place but…";
+        await Task.Delay(2 * 1000);
+        currentSubtitle.text = " It looks different from what they showed me in the briefing.";
+        await Task.Delay(3 * 1000);
+        currentSubtitle.text = "Looks… older. I should try to look for something to confirm where I am.";
+        await Task.Delay(4 * 1000);
+        currentSubtitle.enabled = false;
+    }
 }
