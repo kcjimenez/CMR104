@@ -8,7 +8,6 @@ namespace Kandooz.InteractionSystem.Interactions
     {
         [SerializeField] private bool limited;
         [SerializeField] private float limit = 30;
-        [SerializeField] private float center = 0;
         [SerializeField] private UnityEvent onAngleChanged;
         [SerializeField] private UnityEvent onOpen;
         [SerializeField] private UnityEvent onClose;
