@@ -12,7 +12,7 @@ public class ShowSubtitles : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     /*public void ActivateSubtitles()
@@ -86,6 +86,33 @@ public class ShowSubtitles : MonoBehaviour
         currentCharacter.text = "OTHER SPECTER";
         currentSubtitle.text = "This has to work. I NEED this to work. There’s no other way.";
         await Task.Delay(5 * 1000);
+        currentSubtitle.enabled = false;
+        currentCharacter.enabled = false;
+    }
+
+    public async void ToiletMemoryReactSubtitles()
+    {
+        await Task.Delay(2 * 1000);
+        currentSubtitle.enabled = true;
+        currentCharacter.enabled = true;
+        currentCharacter.color = Color.green;
+        currentCharacter.text = "SPECTER";
+        currentSubtitle.text = "What? That was my voice… but it wasn’t me.";
+        await Task.Delay(4 * 1000);
+        currentSubtitle.enabled = false;
+        currentCharacter.enabled = false;
+    }
+
+    public async void StudyMemorySubtitles()
+    {
+        currentSubtitle.enabled = true;
+        currentCharacter.enabled = true;
+        currentCharacter.color = Color.magenta;
+        currentCharacter.text = "LIANA RILEY";
+        currentSubtitle.text = "Remember our first dance? You stepped on my toes at least five times!";
+        await Task.Delay(4 * 1000);
+        currentSubtitle.text = "But I wouldn't have it any other way.";
+        await Task.Delay(3 * 1000);
         currentSubtitle.enabled = false;
         currentCharacter.enabled = false;
     }
