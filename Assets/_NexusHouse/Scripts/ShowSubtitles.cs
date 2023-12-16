@@ -117,4 +117,88 @@ public class ShowSubtitles : MonoBehaviour
         currentCharacter.enabled = false;
     }
 
+    public async void StudyMemoryReactSubtitles()
+    {
+        await Task.Delay(2 * 1000);
+        currentSubtitle.enabled = true;
+        currentCharacter.enabled = true;
+        currentCharacter.color = Color.green;
+        currentCharacter.text = "SPECTER";
+        currentSubtitle.text = "Liana? What… why am I hearing this?";
+        await Task.Delay(3 * 1000);
+        currentSubtitle.enabled = false;
+        currentCharacter.enabled = false;
+    }
+
+    public async void RadioSubtitles()
+    {
+        await Task.Delay(8 * 1000);
+        currentSubtitle.enabled = true;
+        currentCharacter.enabled = true;
+        currentCharacter.color = Color.blue;
+        currentCharacter.text = "OTHER SPECTER";
+        currentSubtitle.text = "Simon–’ts me—-you—-destroy—ch–res—-stop—time travel—-invente—----Trust me.";
+        await Task.Delay(9 * 1000);
+        currentSubtitle.enabled = false;
+        currentCharacter.enabled = false;
+    }
+
+    public async void RadioReactSubtitles()
+    {
+        await Task.Delay(18 * 1000);
+        currentSubtitle.enabled = true;
+        currentCharacter.enabled = true;
+        currentCharacter.color = Color.green;
+        currentCharacter.text = "SPECTER";
+        currentSubtitle.text = "There! That was my voice again.";
+        await Task.Delay(3 * 1000);
+        currentSubtitle.enabled = false;
+        currentCharacter.enabled = false;
+    }
+
+    public async void SBVoice2Subtitles()
+    {
+        currentSubtitle.enabled = true;
+        currentCharacter.enabled = true;
+        currentCharacter.color = Color.green;
+        currentCharacter.text = "SPECTER";
+        currentSubtitle.text = "I should check the briefing again.";
+        await Task.Delay(2 * 1000);
+        currentSubtitle.text = "Maybe there was some sort of… last-minute change?";
+        await Task.Delay(3 * 1000);
+        currentSubtitle.enabled = false;
+        currentCharacter.enabled = false;
+    }
+    
+    public async void MissionBriefSubtitles()
+    {
+        await Task.Delay(6 * 1000);
+        currentSubtitle.enabled = true;
+        currentCharacter.enabled = true;
+        currentCharacter.color = Color.yellow;
+        currentCharacter.text = "INTERFACE";
+        currentSubtitle.text = "Agent Specter. You have been assigned to a solo mission, Operation: Nexus House.";
+        await Task.Delay(6 * 1000);
+        currentSubtitle.text = "This refers to Dr. Alistair Gray’s residence, where you will need to go.";
+        await Task.Delay(5 * 1000);
+        currentSubtitle.text = "You must travel to the year 1990 and retrieve the artifact known as the Prism.";
+        await Task.Delay(5 * 1000);
+        currentSubtitle.text = "It has been described as a small, blue crystal with a slight glow,";
+        await Task.Delay(4 * 1000);
+        currentSubtitle.text = "and we have no other information about its’ whereabouts,";
+        await Task.Delay(3 * 1000);
+        currentSubtitle.text = "aside from the fact that it’s inside the house.";
+        await Task.Delay(3 * 1000);
+        currentSubtitle.text = "Know that this object is of absolute importance to us,";
+        await Task.Delay(3 * 1000);
+        currentSubtitle.text = "and could completely change the way time-travel works.";
+        await Task.Delay(4 * 1000);
+        currentSubtitle.text = "We’re sending you because you’re our best, and we know you won’t let us down…";
+        await Task.Delay(4 * 1000);
+        currentSubtitle.text = "Godspeed.";
+        await Task.Delay(2 * 1000);
+        currentSubtitle.enabled = false;
+        currentCharacter.enabled = false;
+    }
+
 }
