@@ -132,7 +132,7 @@ public class ShowSubtitles : MonoBehaviour
 
     public async void RadioSubtitles()
     {
-        await Task.Delay(8 * 1000);
+        await Task.Delay(9 * 1000);
         currentSubtitle.enabled = true;
         currentCharacter.enabled = true;
         currentCharacter.color = Color.blue;
@@ -199,6 +199,76 @@ public class ShowSubtitles : MonoBehaviour
         await Task.Delay(2 * 1000);
         currentSubtitle.enabled = false;
         currentCharacter.enabled = false;
+        await Task.Delay(5 * 1000);
+        currentSubtitle.enabled = true;
+        currentCharacter.enabled = true;
+        currentCharacter.color = Color.green;
+        currentCharacter.text = "SPECTER";
+        currentSubtitle.text = "Nothing new there. And now my Chrono-Res is all drained…";
+        await Task.Delay(3 * 1000);
+        currentSubtitle.text = "It’s gonna take at least 24 hours for this to recharge with enough juice for another jump.";
+        await Task.Delay(5 * 1000);
+        currentSubtitle.text = "What the hell, might as well start looking now.";
+        await Task.Delay(3 * 1000);
+        currentSubtitle.text = "If I’m lucky, the Prism might be here in 1940 too.";
+        await Task.Delay(4 * 1000);
+        currentSubtitle.enabled = false;
+        currentCharacter.enabled = false;
     }
 
+    public async void WallMovingReact()
+    {
+        await Task.Delay(7 * 1000);
+        currentSubtitle.enabled = true;
+        currentCharacter.enabled = true;
+        currentCharacter.color = Color.green;
+        currentCharacter.text = "SPECTER";
+        currentSubtitle.text = "What was that?";
+        await Task.Delay(2 * 1000);
+        currentSubtitle.enabled = false;
+        currentCharacter.enabled = false;
+    }
+
+    public async void SBVoice3Subtitles()
+    {
+        currentSubtitle.enabled = true;
+        currentCharacter.enabled = true;
+        currentCharacter.color = Color.green;
+        currentCharacter.text = "SPECTER";
+        currentSubtitle.text = "A hidden staircase? I might find what I’m looking for up there.";
+        await Task.Delay(4 * 1000);
+        currentSubtitle.enabled = false;
+        currentCharacter.enabled = false;
+    }
+
+    public async void StairsMemorySubtitles()
+    {
+        currentSubtitle.enabled = true;
+        currentCharacter.enabled = true;
+        currentCharacter.color = Color.magenta;
+        currentCharacter.text = "LIANA RILEY";
+        currentSubtitle.text = "Listen to me. You do your mission and you come right back here.";
+        await Task.Delay(4 * 1000);
+        currentSubtitle.text = "Promise me that you won’t do anything to make this more dangerous than it already is.";
+        await Task.Delay(5 * 1000);
+        currentSubtitle.text = "Promise that you’ll come back to me and the kids.";
+        await Task.Delay(3 * 1000);
+        currentSubtitle.enabled = false;
+        currentCharacter.enabled = false;
+    }
+
+    public async void StairsMemoryReactSubtitles()
+    {
+        await Task.Delay(2 * 1000);
+        currentSubtitle.enabled = true;
+        currentCharacter.enabled = true;
+        currentCharacter.color = Color.green;
+        currentCharacter.text = "SPECTER";
+        currentSubtitle.text = "My wife said that to me before I left for my mission.";
+        await Task.Delay(3 * 1000);
+        currentSubtitle.text = "I need to keep my promise and get this done as quickly and safely as I can.";
+        await Task.Delay(4 * 1000);
+        currentSubtitle.enabled = false;
+        currentCharacter.enabled = false;
+    }
 }

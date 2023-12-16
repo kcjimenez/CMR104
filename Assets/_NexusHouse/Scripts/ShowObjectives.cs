@@ -70,4 +70,10 @@ public class ShowObjectives : MonoBehaviour
         currentObjective.text = "Press on the Chrono-Resonator to check the Mission Brief";
         currentObjective.enabled = false;
     }
+
+    public void ExploreObjective()
+    {
+        currentObjective.text = "Keep Exploring";
+        currentObjective.enabled = false;
+    }
 }
