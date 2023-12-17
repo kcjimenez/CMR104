@@ -145,7 +145,7 @@ public class ShowSubtitles : MonoBehaviour
 
     public async void RadioReactSubtitles()
     {
-        await Task.Delay(18 * 1000);
+        await Task.Delay(19 * 1000);
         currentSubtitle.enabled = true;
         currentCharacter.enabled = true;
         currentCharacter.color = Color.green;

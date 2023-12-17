@@ -76,4 +76,10 @@ public class ShowObjectives : MonoBehaviour
         currentObjective.text = "Keep Exploring";
         currentObjective.enabled = false;
     }
+
+    public void UpstairsObjective()
+    {
+        currentObjective.text = "Go Upstairs";
+        currentObjective.enabled = false;
+    }
 }
