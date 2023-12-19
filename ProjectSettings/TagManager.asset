@@ -9,6 +9,7 @@ TagManager:
   - VRHand
   - RightIndex
   - Voice2Trigger
+  - ObjectivesManager
   layers:
   - Default
   - TransparentFX

@@ -359,7 +359,7 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 1
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Size: {x: 2.13068, y: 0.13976544, z: 1}
   m_Center: {x: -0.021635056, y: -0.5191885, z: 0}
@@ -426,6 +426,18 @@ MonoBehaviour:
           m_StringArgument: stopBlinking
           m_BoolArgument: 0
         m_CallState: 1
+      - m_Target: {fileID: 11400000, guid: fec26278afb71f24f8c58517c17ae2bb, type: 2}
+        m_TargetAssemblyTypeName: CustomEvent, Assembly-CSharp
+        m_MethodName: CallCustomEvent
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: stopBlinking
+          m_BoolArgument: 0
+        m_CallState: 2
   onVideoEnd:
     m_PersistentCalls:
       m_Calls:
