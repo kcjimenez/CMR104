@@ -6,6 +6,7 @@ using UnityEngine;
 public class FlashlightTrigger : MonoBehaviour
 {
     [SerializeField] Light flashlight;
+    [SerializeField] AudioSource flashlightClick;
     public bool lightOn;
 
     void Start()
@@ -19,12 +20,14 @@ public class FlashlightTrigger : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.JoystickButton0) && !lightOn)
         {
             flashlight.enabled = true;
+            flashlightClick.Play();
             lightOn = true;
         }
 
         else if (Input.GetKeyDown(KeyCode.JoystickButton0) && lightOn)
         {
             flashlight.enabled = false;
+            flashlightClick.Play();
             lightOn = false;
         }
     }
