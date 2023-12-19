@@ -203,6 +203,12 @@ MonoBehaviour:
   selectionButton: 1
   onSelected:
     m_PersistentCalls:
+      m_Calls: []
+  onDeselected:
+    m_PersistentCalls:
+      m_Calls: []
+  onHoverStart:
+    m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 5551862220916380841}
         m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
@@ -216,7 +222,7 @@ MonoBehaviour:
           m_StringArgument: selected
           m_BoolArgument: 0
         m_CallState: 2
-  onDeselected:
+  onHoverEnd:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 5551862220916380841}
@@ -231,12 +237,6 @@ MonoBehaviour:
           m_StringArgument: unselected
           m_BoolArgument: 0
         m_CallState: 2
-  onHoverStart:
-    m_PersistentCalls:
-      m_Calls: []
-  onHoverEnd:
-    m_PersistentCalls:
-      m_Calls: []
   onActivated:
     m_PersistentCalls:
       m_Calls: []

@@ -209,10 +209,34 @@ MonoBehaviour:
       m_Calls: []
   onHoverStart:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 3843711295148269148}
+        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+        m_MethodName: SetTrigger
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: selected
+          m_BoolArgument: 0
+        m_CallState: 2
   onHoverEnd:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 3843711295148269148}
+        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+        m_MethodName: SetTrigger
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: unselected
+          m_BoolArgument: 0
+        m_CallState: 2
   onActivated:
     m_PersistentCalls:
       m_Calls: []
@@ -277,6 +301,7 @@ GameObject:
   - component: {fileID: 3098773437611493568}
   - component: {fileID: 5712694865546960980}
   - component: {fileID: 444291910862165732}
+  - component: {fileID: 3843711295148269148}
   m_Layer: 0
   m_Name: Bottle_2
   m_TagString: Untagged
@@ -370,3 +395,25 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.12316393, y: 0.22633144, z: 0.1175724}
   m_Center: {x: -0.000000078231096, y: 0.11316571, z: -0.000000024214387}
+--- !u!95 &3843711295148269148
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5578773357438329572}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 93ef01895993a4443b36aba66bda4070, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
