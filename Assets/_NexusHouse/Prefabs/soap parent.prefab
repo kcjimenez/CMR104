@@ -270,12 +270,13 @@ GameObject:
   - component: {fileID: 1332270638056292238}
   - component: {fileID: 3385575801368071354}
   - component: {fileID: 5551862220916380841}
+  - component: {fileID: 7352443446374735431}
   m_Layer: 0
   m_Name: Soap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &3302727540237067401
 Transform:
@@ -364,6 +365,27 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!65 &7352443446374735431
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6807672103671848577}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.09600312, y: 0.047335625, z: 0.1376016}
+  m_Center: {x: -0.00000010812158, y: 0.023667812, z: -0.000000018714614}
 --- !u!1 &7691047092611600841
 GameObject:
   m_ObjectHideFlags: 0

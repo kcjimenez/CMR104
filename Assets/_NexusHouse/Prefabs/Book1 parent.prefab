@@ -268,6 +268,7 @@ GameObject:
   - component: {fileID: 1856591448134092795}
   - component: {fileID: 812201141046779157}
   - component: {fileID: 4913847207087929004}
+  - component: {fileID: 6726790695528302965}
   m_Layer: 0
   m_Name: Book_1 (3)
   m_TagString: Untagged
@@ -364,6 +365,27 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!65 &6726790695528302965
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6092595151408672312}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.3027841, y: 0.34972715, z: 0.071723536}
+  m_Center: {x: 0.011488288, y: 0.17486349, z: 0.035861697}
 --- !u!1 &8137515899851007247
 GameObject:
   m_ObjectHideFlags: 0
