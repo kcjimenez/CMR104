@@ -1405,6 +1405,10 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  onFinished:
+    m_PersistentCalls:
+      m_Calls: []
+  waitTime: 0
 --- !u!114 &379875852
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5785,7 +5789,7 @@ MonoBehaviour:
   m_SendPointerHoverToParent: 1
   m_HorizontalAxis: Horizontal
   m_VerticalAxis: Vertical
-  m_SubmitButton: XRI_Right_TriggerButton
+  m_SubmitButton: XRI_Left_TriggerButton
   m_CancelButton: Cancel
   m_InputActionsPerSecond: 10
   m_RepeatDelay: 0.5
