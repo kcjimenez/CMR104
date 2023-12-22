@@ -17,6 +17,8 @@ namespace Kinteractions_VR.Locomotion.Runtime
         [SerializeField] private Transform leftHandPointer;
         [SerializeField] private Transform rightHandPointer;
         [SerializeField] private Transform pointer;
+        [SerializeField] private Transform offsetObject;
+
         [SerializeField] private string teleportationTag;
         [SerializeField] private UnityEvent onTeleportationStarted;
         [SerializeField] private UnityEvent onTeleportationEnded;
@@ -48,6 +50,7 @@ namespace Kinteractions_VR.Locomotion.Runtime
             showCurve = false;
             lineRenderer.enabled = false;
             this.transform.position = teleportationPoint;
+                //- offsetObject.position  + new Vector3(0,offsetObject.transform.position.y,0)  ; ;
             await Task.Delay(200);
             onTeleportationEnded.Invoke();
         }

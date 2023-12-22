@@ -2126,7 +2126,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7930801694725630021, guid: 412ccae33a1d60744ac79a9029c7c7c2, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.079
+      value: 0.543
       objectReference: {fileID: 0}
     - target: {fileID: 7930801694725630021, guid: 412ccae33a1d60744ac79a9029c7c7c2, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2241,6 +2241,10 @@ PrefabInstance:
     - target: {fileID: 5403033879676546697, guid: 07f484df234538941adf5480852cdbb1, type: 3}
       propertyPath: m_Name
       value: chronores
+      objectReference: {fileID: 0}
+    - target: {fileID: 9079618408464549897, guid: 07f484df234538941adf5480852cdbb1, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

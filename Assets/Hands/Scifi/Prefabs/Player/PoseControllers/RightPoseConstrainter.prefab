@@ -312,6 +312,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6600009335043282832, guid: 58f726e9235ec46f0ba6799d547d6c53, type: 3}
+      propertyPath: onEventCalled.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6600009335043282832, guid: 58f726e9235ec46f0ba6799d547d6c53, type: 3}
+      propertyPath: onEventCalled.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6600009335043282832, guid: 58f726e9235ec46f0ba6799d547d6c53, type: 3}
+      propertyPath: onEventCalled.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 6669150320575249259, guid: 58f726e9235ec46f0ba6799d547d6c53, type: 3}
       propertyPath: m_Layer
       value: 8
@@ -355,6 +367,10 @@ PrefabInstance:
     - target: {fileID: 8729027030090670170, guid: 58f726e9235ec46f0ba6799d547d6c53, type: 3}
       propertyPath: m_Layer
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8792359428550342224, guid: 58f726e9235ec46f0ba6799d547d6c53, type: 3}
+      propertyPath: m_Name
+      value: PointerCapsule
       objectReference: {fileID: 0}
     - target: {fileID: 8792359428550342224, guid: 58f726e9235ec46f0ba6799d547d6c53, type: 3}
       propertyPath: m_Layer

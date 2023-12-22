@@ -36,6 +36,15 @@ public class ShowObjectives : MonoBehaviour
             await Task.Delay(5 * 1000);
             currentObjective.enabled = false;
         }
+
+        if (collectedClues >= 3)
+        {
+            var obj = GameObject.FindGameObjectWithTag("Voice2Trigger");
+            Debug.Log("trigger found");
+            obj.GetComponent<BoxCollider>().enabled = true;
+            await Task.Delay(6 * 1000);
+            isCCObjectiveActive = false;
+        }
     }
 
     public void AddClues()
@@ -53,15 +62,6 @@ public class ShowObjectives : MonoBehaviour
         else if (collectedClues > 0)
         {
             currentObjective.text = "Collect Clues (" + collectedClues + "/3)";
-
-            if(collectedClues >= 3)
-            {
-                var obj = GameObject.Find("SBVoice2 Trigger");
-                Debug.Log("trigger found");
-                obj.GetComponent<BoxCollider>().enabled = true;
-                await Task.Delay(6 * 1000);
-                isCCObjectiveActive = false;
-            }
         }
     }
 
