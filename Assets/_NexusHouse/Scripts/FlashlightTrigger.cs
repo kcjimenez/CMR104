@@ -46,7 +46,6 @@ public class FlashlightTrigger : MonoBehaviour
         await Task.Delay(30 * 1000);
         lightGlitch = false;
         flashlight.enabled = true;
-        flashlightClick.Play();
         lightOn = true;
     }
 

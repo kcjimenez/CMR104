@@ -8,7 +8,9 @@ public class Dialogue : MonoBehaviour
 {
     [SerializeField] private UnityEvent onColliderTriggered;
     [SerializeField] private UnityEvent afterDialogue;
+    [SerializeField] private UnityEvent secondWaitTime;
     [SerializeField] int waitTime;
+    [SerializeField] int waitTime2;
 
     private async void OnTriggerEnter(Collider other)
     {
@@ -17,6 +19,8 @@ public class Dialogue : MonoBehaviour
             onColliderTriggered.Invoke();
             await Task.Delay(waitTime * 1000);
             afterDialogue.Invoke();
+            await Task.Delay(waitTime2 * 1000);
+            secondWaitTime.Invoke();
         }
     }
 
