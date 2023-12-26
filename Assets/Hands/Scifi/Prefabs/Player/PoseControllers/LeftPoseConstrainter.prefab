@@ -2242,6 +2242,42 @@ PrefabInstance:
       propertyPath: m_Name
       value: chronores
       objectReference: {fileID: 0}
+    - target: {fileID: 8847615354716051457, guid: 07f484df234538941adf5480852cdbb1, type: 3}
+      propertyPath: onVideoEnd.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8847615354716051457, guid: 07f484df234538941adf5480852cdbb1, type: 3}
+      propertyPath: onVideoStart.m_PersistentCalls.m_Calls.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8847615354716051457, guid: 07f484df234538941adf5480852cdbb1, type: 3}
+      propertyPath: onVideoStart.m_PersistentCalls.m_Calls.Array.data[5].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8847615354716051457, guid: 07f484df234538941adf5480852cdbb1, type: 3}
+      propertyPath: onVideoStart.m_PersistentCalls.m_Calls.Array.data[5].m_Target
+      value: 
+      objectReference: {fileID: 282660706227553818}
+    - target: {fileID: 8847615354716051457, guid: 07f484df234538941adf5480852cdbb1, type: 3}
+      propertyPath: onVideoStart.m_PersistentCalls.m_Calls.Array.data[5].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8847615354716051457, guid: 07f484df234538941adf5480852cdbb1, type: 3}
+      propertyPath: onVideoStart.m_PersistentCalls.m_Calls.Array.data[5].m_MethodName
+      value: set_enabled
+      objectReference: {fileID: 0}
+    - target: {fileID: 8847615354716051457, guid: 07f484df234538941adf5480852cdbb1, type: 3}
+      propertyPath: onVideoStart.m_PersistentCalls.m_Calls.Array.data[5].m_TargetAssemblyTypeName
+      value: UnityEngine.Collider, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8847615354716051457, guid: 07f484df234538941adf5480852cdbb1, type: 3}
+      propertyPath: onVideoStart.m_PersistentCalls.m_Calls.Array.data[5].m_Arguments.m_StringArgument
+      value: stopBlinking
+      objectReference: {fileID: 0}
+    - target: {fileID: 8847615354716051457, guid: 07f484df234538941adf5480852cdbb1, type: 3}
+      propertyPath: onVideoStart.m_PersistentCalls.m_Calls.Array.data[5].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 9079618408464549897, guid: 07f484df234538941adf5480852cdbb1, type: 3}
       propertyPath: m_Enabled
       value: 0
