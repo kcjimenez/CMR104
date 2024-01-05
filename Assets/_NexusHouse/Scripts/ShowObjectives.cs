@@ -70,21 +70,10 @@ public class ShowObjectives : MonoBehaviour
         }
     }
 
-    public void CheckMissionBrief()
+    public void CurrentObjective(string objective)
     {
-        currentObjective.text = "Press on the Chrono-Resonator to check the Mission Brief";
+        currentObjective.text = objective;
         currentObjective.enabled = false;
     }
-
-    public void ExploreObjective()
-    {
-        currentObjective.text = "Keep Exploring";
-        currentObjective.enabled = false;
-    }
-
-    public void UpstairsObjective()
-    {
-        currentObjective.text = "Go Upstairs";
-        currentObjective.enabled = false;
-    }
+        
 }
