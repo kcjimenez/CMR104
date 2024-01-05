@@ -11,6 +11,7 @@ public class ShowObjectives : MonoBehaviour
     [SerializeField] TMP_Text pressX;
     public int collectedClues;
     bool isCCObjectiveActive = true;
+    bool voice2Activated = false;
 
     // Start is called before the first frame update
     void Start()
@@ -28,7 +29,7 @@ public class ShowObjectives : MonoBehaviour
             Debug.Log("show objective");
             currentObjective.enabled = true;
 
-            if(isCCObjectiveActive)
+            if (isCCObjectiveActive)
             {
                 CollectCluesObjective();
             }
@@ -39,11 +40,15 @@ public class ShowObjectives : MonoBehaviour
 
         if (collectedClues >= 3)
         {
-            var obj = GameObject.FindGameObjectWithTag("Voice2Trigger");
-            Debug.Log("trigger found");
-            obj.GetComponent<BoxCollider>().enabled = true;
-            await Task.Delay(6 * 1000);
-            isCCObjectiveActive = false;
+            if (!voice2Activated)
+            {
+                var obj = GameObject.FindGameObjectWithTag("Voice2Trigger");
+                Debug.Log("trigger found");
+                obj.GetComponent<BoxCollider>().enabled = true;
+                await Task.Delay(6 * 1000);
+                isCCObjectiveActive = false;
+                voice2Activated = true;
+            }
         }
     }
 
