@@ -10,6 +10,7 @@ TagManager:
   - RightIndex
   - Voice2Trigger
   - ObjectivesManager
+  - Door
   layers:
   - Default
   - TransparentFX
@@ -28,7 +29,7 @@ TagManager:
   - XRI_Teleportation
   - XRI_PlayerLayer
   - Effects
-  - 
+  - Keypad
   - 
   - 
   - 
