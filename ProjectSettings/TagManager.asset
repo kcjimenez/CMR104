@@ -11,6 +11,7 @@ TagManager:
   - Voice2Trigger
   - ObjectivesManager
   - Door
+  - prismTrigger
   layers:
   - Default
   - TransparentFX

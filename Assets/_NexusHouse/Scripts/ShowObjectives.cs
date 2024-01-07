@@ -57,7 +57,7 @@ public class ShowObjectives : MonoBehaviour
         collectedClues++;
     }
 
-    public async void CollectCluesObjective()
+    public void CollectCluesObjective()
     {
         if (collectedClues == 0)
         {
