@@ -60,7 +60,7 @@ public class Keypad : MonoBehaviour
                 CheckCombo();
                 break;
             default:
-                if (currentInput != null && currentInput.Length == 9) // 9 max passcode size 
+                if (currentInput != null && currentInput.Length == 4) // 9 max passcode size 
                 {
                     return;
                 }
