@@ -21,12 +21,14 @@ public class Prism : MonoBehaviour
         {
             transform.SetParent(animatedParent);
             rb.useGravity = false;
+            rb.isKinematic = true;
         }
 
-        else
+        else if (!prismInTrigger)
         {
             transform.SetParent(grabbedParent);
             rb.useGravity = true;
+            rb.isKinematic = false;
         }
     }
 

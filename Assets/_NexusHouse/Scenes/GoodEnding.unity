@@ -1137,6 +1137,67 @@ MonoBehaviour:
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
   m_SoftShadowQuality: 0
+--- !u!1001 &798864429
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8841422738568278764, guid: b09d33c8b7830a34d89d176d138cba96, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8841422738568278764, guid: b09d33c8b7830a34d89d176d138cba96, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8841422738568278764, guid: b09d33c8b7830a34d89d176d138cba96, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8841422738568278764, guid: b09d33c8b7830a34d89d176d138cba96, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8841422738568278764, guid: b09d33c8b7830a34d89d176d138cba96, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8841422738568278764, guid: b09d33c8b7830a34d89d176d138cba96, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8841422738568278764, guid: b09d33c8b7830a34d89d176d138cba96, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8841422738568278764, guid: b09d33c8b7830a34d89d176d138cba96, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8841422738568278764, guid: b09d33c8b7830a34d89d176d138cba96, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8841422738568278764, guid: b09d33c8b7830a34d89d176d138cba96, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8841422738568278765, guid: b09d33c8b7830a34d89d176d138cba96, type: 3}
+      propertyPath: fadeScreen
+      value: 
+      objectReference: {fileID: 1149058920}
+    - target: {fileID: 8841422738568278766, guid: b09d33c8b7830a34d89d176d138cba96, type: 3}
+      propertyPath: m_Name
+      value: Transition Manager
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b09d33c8b7830a34d89d176d138cba96, type: 3}
 --- !u!1 &836623034
 GameObject:
   m_ObjectHideFlags: 0
@@ -1493,6 +1554,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e367714f162349d48a5cb6f00133e149, type: 3}
+--- !u!114 &1149058920 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3127377416852887304, guid: e367714f162349d48a5cb6f00133e149, type: 3}
+  m_PrefabInstance: {fileID: 1149058919}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c2d507c3ae9dc744a28e79d568b5806, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1385681233
 GameObject:
   m_ObjectHideFlags: 0
@@ -2486,14 +2558,14 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Specter (Beta), after destroying the Chrono-Resonator and leaving himself
-    with no means to time-travel, lives out the rest of his days in 1940 inside the
-    Nexus House. This is the sacrifice he had to make in order to ensure the safety
-    of his family both in his own timeline, and the new timeline created becasue
-    of his choice.\n\nIn this new timeline, since Specter has destroyed the past\u2019s
+  m_text: "Specter, after destroying the Chrono-Resonator and leaving himself with
+    no means to time-travel, lives out the rest of his days in 1940 inside the Nexus
+    House. This is the sacrifice he had to make in order to ensure the safety of
+    his family both in his own timeline, and the new timeline created because of
+    his choice.\n\nIn this new timeline, since Specter has destroyed the past\u2019s
     Chrono-Resonator before it could even be finished, time-travel was never invented.
-    Simon Riley from new timeline lives a normal life in his proper time and meets
-    his wife Liana, eventually having their two kids.\r\n"
+    Simon Riley from the new timeline lives a normal life in his proper time and
+    meets his wife Liana, eventually having their two kids.\r\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8563c1e978f8d8140a4550badf5eda2a, type: 2}
   m_sharedMaterial: {fileID: 7070727268754226202, guid: 8563c1e978f8d8140a4550badf5eda2a, type: 2}
@@ -2627,7 +2699,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Press B to Make Another Choice
+  m_text: GOOD ENDING
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d02b48c5a42ba7d41b29abd70701c2fe, type: 2}
   m_sharedMaterial: {fileID: -8861899442811668772, guid: d02b48c5a42ba7d41b29abd70701c2fe, type: 2}
@@ -2636,8 +2708,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281004523
-  m_fontColor: {r: 0.9200045, g: 0.9433962, b: 0.16464934, a: 1}
+    rgba: 4278779176
+  m_fontColor: {r: 0.15760845, g: 0.990566, b: 0.032707386, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -3529,3 +3601,4 @@ SceneRoots:
   - {fileID: 1785522450}
   - {fileID: 3752440975567180648}
   - {fileID: 1399380293}
+  - {fileID: 798864429}

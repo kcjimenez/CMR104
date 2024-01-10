@@ -13,6 +13,7 @@ TagManager:
   - Door
   - prismTrigger
   - DestroyTrigger
+  - DontDestroyTrigger
   layers:
   - Default
   - TransparentFX

@@ -1,23 +1,27 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.SceneManagement;
 
 public class FinalChoice : MonoBehaviour
 {
     public bool destroyChosen = false;
     public bool dontDestroyChosen = false;
+    public UnityEvent onDestroy;
+    public UnityEvent onDontDestroy;
+    public Rigidbody rb;
 
     public void NextScene()
     {
         if(destroyChosen && !dontDestroyChosen)
         {
-            SceneManager.LoadScene(2);
+            onDestroy.Invoke();
         }
 
         else if (!destroyChosen && dontDestroyChosen)
         {
-            SceneManager.LoadScene(3);
+            onDontDestroy.Invoke();
         }
     }
 
@@ -27,12 +31,16 @@ public class FinalChoice : MonoBehaviour
         {
             destroyChosen = true;
             dontDestroyChosen = false;
+            rb.useGravity= false;
+            rb.isKinematic= true;
         }
 
         else if (other.CompareTag("DontDestroyTrigger"))
         {
             destroyChosen = false;
             dontDestroyChosen = true;
+            rb.useGravity = false;
+            rb.isKinematic = true;
         }
     }
 
