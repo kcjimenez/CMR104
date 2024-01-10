@@ -12,6 +12,7 @@ TagManager:
   - ObjectivesManager
   - Door
   - prismTrigger
+  - DestroyTrigger
   layers:
   - Default
   - TransparentFX
