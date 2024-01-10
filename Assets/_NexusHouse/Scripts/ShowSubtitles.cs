@@ -169,7 +169,7 @@ public class ShowSubtitles : MonoBehaviour
         currentSubtitle.enabled = false;
         currentCharacter.enabled = false;
     }
-    
+
     public async void MissionBriefSubtitles()
     {
         await Task.Delay(6 * 1000);
@@ -268,6 +268,155 @@ public class ShowSubtitles : MonoBehaviour
         await Task.Delay(3 * 1000);
         currentSubtitle.text = "I need to keep my promise and get this done as quickly and safely as I can.";
         await Task.Delay(4 * 1000);
+        currentSubtitle.enabled = false;
+        currentCharacter.enabled = false;
+    }
+
+    public async void Toilet2MemorySubtitles()
+    {
+        currentSubtitle.enabled = true;
+        currentCharacter.enabled = true;
+        currentCharacter.color = Color.blue;
+        currentCharacter.text = "OTHER SPECTER";
+        currentSubtitle.text = "It’s too late for me, and for the next guy. But the one after him, he might have a chance.";
+        await Task.Delay(5 * 1000);
+        currentSubtitle.text = "I hope he makes the right choice… And I hope our sacrifice will mean something.";
+        await Task.Delay(5 * 1000);
+        currentSubtitle.enabled = false;
+        currentCharacter.enabled = false;
+    }
+
+    public async void Toilet2MemoryReactSubtitles()
+    {
+        await Task.Delay(2 * 1000);
+        currentSubtitle.enabled = true;
+        currentCharacter.enabled = true;
+        currentCharacter.color = Color.green;
+        currentCharacter.text = "SPECTER";
+        currentSubtitle.text = "Is he talking about me? What… why do I need to make a sacrifice?";
+        await Task.Delay(7 * 1000);
+        currentSubtitle.enabled = false;
+        currentCharacter.enabled = false;
+    }
+
+    public async void KeypadSubtitles()
+    {
+        currentSubtitle.enabled = true;
+        currentCharacter.enabled = true;
+        currentCharacter.color = Color.green;
+        currentCharacter.text = "SPECTER";
+        currentSubtitle.text = "There’s something there, behind those books.";
+        await Task.Delay(3 * 1000);
+        currentSubtitle.enabled = false;
+        currentCharacter.enabled = false;
+    }
+
+    public async void WrongPasscode()
+    {
+        await Task.Delay(1 * 1000);
+        currentSubtitle.enabled = true;
+        currentCharacter.enabled = true;
+        currentCharacter.color = Color.green;
+        currentCharacter.text = "SPECTER";
+        currentSubtitle.text = "I need to find out what the passcode is. I think I saw some clues downstairs.";
+        await Task.Delay(4 * 1000);
+        currentSubtitle.text = "I should go back and try to figure it out.";
+        await Task.Delay(4 * 1000);
+        currentSubtitle.enabled = false;
+        currentCharacter.enabled = false;
+    }
+
+    public async void LabSubtitles()
+    {
+        currentSubtitle.enabled = true;
+        currentCharacter.enabled = true;
+        currentCharacter.color = Color.green;
+        currentCharacter.text = "SPECTER";
+        currentSubtitle.text = "What is this place? Most of these things don’t belong in this era. How is this possible?";
+        await Task.Delay(5 * 1000);
+        currentSubtitle.enabled = false;
+        currentCharacter.enabled = false;
+    }
+
+    public async void LabRoomSubtitles()
+    {
+        currentSubtitle.enabled = true;
+        currentCharacter.enabled = true;
+        currentCharacter.color = Color.green;
+        currentCharacter.text = "SPECTER";
+        currentSubtitle.text = "That’s it. Glowing blue crystal, that has to be the Prism.";
+        await Task.Delay(5 * 1000);
+        currentSubtitle.enabled = false;
+        currentCharacter.enabled = false;
+
+    }
+
+    public async void PrismSubtitles()
+    {
+        await Task.Delay(1 * 1000);
+        currentSubtitle.enabled = true;
+        currentCharacter.enabled = true;
+        currentCharacter.color = Color.blue;
+        currentCharacter.text = "OTHER SPECTER";
+        currentSubtitle.text = "Simon Riley. I’m leaving this message for you, not even sure if you’ll get it but I have no other option.";
+        await Task.Delay(7 * 1000);
+        currentSubtitle.text = "I am you. From a different timeline. I went back here to tell you this,";
+        await Task.Delay(5 * 1000);
+        currentSubtitle.text = "and I was the one who changed the year to 1940 before you time-jumped.";
+        await Task.Delay(4 * 1000);
+        currentSubtitle.text = "And I know, you don’t trust me. I wouldn’t either.";
+        await Task.Delay(4 * 1000);
+        currentSubtitle.text = "But I’m going to ask you to turn your back on the mission.";
+        await Task.Delay(3 * 1000);
+        currentSubtitle.text = "Giving the Agency that Prism was the worst mistake I’ve ever made.";
+        await Task.Delay(4 * 1000);
+        currentSubtitle.text = " The moment they got their hands on it, everything turned to chaos and… I lost them.";
+        await Task.Delay(6 * 1000);
+        currentSubtitle.text = "Liana, and our kids. I’m doing this, talking to you, so you can do the right thing.";
+        await Task.Delay(7 * 1000);
+        currentSubtitle.text = "I need you to look for the unfinished prototype of the Chrono-Resonator, somewhere in this house.";
+        await Task.Delay(5 * 1000);
+        currentSubtitle.text = "And you need to destroy it, as well as the one on your wrist.";
+        await Task.Delay(4 * 1000);
+        currentSubtitle.text = "This will hopefully create a new timeline, where time-travel never existed.";
+        await Task.Delay(5 * 1000);
+        currentSubtitle.text = "And maybe… maybe there we can keep them safe. Maybe in that timeline, we can be happy.";
+        await Task.Delay(7 * 1000);
+        currentSubtitle.text = "But us… we must make this sacrifice. I trust you.";
+        await Task.Delay(4 * 1000);
+        currentSubtitle.enabled = false;
+        currentCharacter.enabled = false;
+    }
+
+    public async void SBPrismReactSubtitles()
+    {
+        await Task.Delay(2 * 1000);
+        currentSubtitle.enabled = true;
+        currentCharacter.enabled = true;
+        currentCharacter.color = Color.green;
+        currentCharacter.text = "SPECTER";
+        currentSubtitle.text = "I… If I do this, I’ll never see my family again.";
+        await Task.Delay(4 * 1000);
+        currentSubtitle.text = "I’ll be stuck here, and they’re going to keep waiting for me to return. Forever. I can’t do that to them!";
+        await Task.Delay(7 * 1000);
+        currentSubtitle.text = "And for what, for blind hope that life will be better for us in another timeline?";
+        await Task.Delay(5 * 1000);
+        currentSubtitle.text = "I can’t… it’s too big a sacrifice… ";
+        await Task.Delay(4 * 1000);
+        currentSubtitle.text = "But… if it’s going to keep them safe…";
+        await Task.Delay(3 * 1000);
+        currentSubtitle.enabled = false;
+        currentCharacter.enabled = false;
+    }
+
+    public async void FinalChoiceSubtitles()
+    {
+        currentSubtitle.enabled = true;
+        currentCharacter.enabled = true;
+        currentCharacter.color = Color.green;
+        currentCharacter.text = "SPECTER";
+        currentSubtitle.text = "This is it. I need to make my choice. It’s now or never.";
+        await Task.Delay(5 * 1000);
         currentSubtitle.enabled = false;
         currentCharacter.enabled = false;
     }

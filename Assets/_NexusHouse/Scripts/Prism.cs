@@ -6,7 +6,7 @@ public class Prism : MonoBehaviour
 {
     public Transform grabbedParent;
     public Transform animatedParent;
-    public bool prismInTrigger;
+    public bool prismInTrigger = false;
     public Rigidbody rb;
 
     public void MoveToGrabbedParent()
@@ -38,10 +38,13 @@ public class Prism : MonoBehaviour
         {
             prismInTrigger= true;
         }
+    }
 
-        else
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("prismTrigger"))
         {
-            prismInTrigger= false;
+            prismInTrigger = false;
         }
     }
 }
