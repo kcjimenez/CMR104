@@ -2269,6 +2269,7 @@ GameObject:
   - component: {fileID: 1785522447}
   - component: {fileID: 1785522446}
   - component: {fileID: 1785522445}
+  - component: {fileID: 1785522451}
   m_Layer: 15
   m_Name: GOODENDING UI
   m_TagString: Untagged
@@ -2389,6 +2390,22 @@ RectTransform:
   m_AnchoredPosition: {x: 40.458, y: 0.523}
   m_SizeDelta: {x: 583, y: 279}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1785522451
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1785522444}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c57b1ea6af5bea4cac83a3a5df0b6b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textMeshPro: {fileID: 1911989636}
+  typingSpeed: 0.05
+  typingSounds: {fileID: 0}
+  waitTime: 0
 --- !u!1 &1800511842
 GameObject:
   m_ObjectHideFlags: 0
