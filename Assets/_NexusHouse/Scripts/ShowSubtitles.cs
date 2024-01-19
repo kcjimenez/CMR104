@@ -109,10 +109,10 @@ public class ShowSubtitles : MonoBehaviour
         currentCharacter.enabled = true;
         currentCharacter.color = Color.magenta;
         currentCharacter.text = "LIANA RILEY";
-        currentSubtitle.text = "Remember our first dance? You stepped on my toes at least five times!";
+        currentSubtitle.text = "Do you remember our first dance? You stepped on my toes at least five times!";
+        await Task.Delay(5 * 1000);
+        currentSubtitle.text = "But... honestly I wouldn't have it any other way.";
         await Task.Delay(4 * 1000);
-        currentSubtitle.text = "But I wouldn't have it any other way.";
-        await Task.Delay(3 * 1000);
         currentSubtitle.enabled = false;
         currentCharacter.enabled = false;
     }
@@ -248,11 +248,11 @@ public class ShowSubtitles : MonoBehaviour
         currentCharacter.color = Color.magenta;
         currentCharacter.text = "LIANA RILEY";
         currentSubtitle.text = "Listen to me. You do your mission and you come right back here.";
-        await Task.Delay(4 * 1000);
-        currentSubtitle.text = "Promise me that you won’t do anything to make this more dangerous than it already is.";
         await Task.Delay(5 * 1000);
-        currentSubtitle.text = "Promise that you’ll come back to me and the kids.";
-        await Task.Delay(3 * 1000);
+        currentSubtitle.text = "Promise me that you won’t do anything to make this more dangerous than it already is.";
+        await Task.Delay(6 * 1000);
+        currentSubtitle.text = "Promise me... that you’ll come back to me and the kids.";
+        await Task.Delay(4 * 1000);
         currentSubtitle.enabled = false;
         currentCharacter.enabled = false;
     }
