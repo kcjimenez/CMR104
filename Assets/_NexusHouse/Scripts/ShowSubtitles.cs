@@ -45,7 +45,7 @@ public class ShowSubtitles : MonoBehaviour
         currentSubtitle.text = "It looks different from what they showed me in the briefing.";
         await Task.Delay(3 * 1000);
         currentSubtitle.text = "Looks… older. I should try to look for something to confirm where I am.";
-        await Task.Delay(4 * 1000);
+        await Task.Delay(6 * 1000);
         currentSubtitle.enabled = false;
         currentCharacter.enabled = false;
     }
@@ -59,7 +59,7 @@ public class ShowSubtitles : MonoBehaviour
         currentSubtitle.text = "1940… No, no. I’m supposed to be in 1990, I’m positive that’s what I punched into my Chrono-Res.";
         await Task.Delay(7 * 1000);
         currentSubtitle.text = "I don’t make mistakes like this… What’s going on?";
-        await Task.Delay(4 * 1000);
+        await Task.Delay(5 * 1000);
         currentSubtitle.enabled = false;
         currentCharacter.enabled = false;
     }
@@ -71,9 +71,9 @@ public class ShowSubtitles : MonoBehaviour
         currentCharacter.color = Color.green;
         currentCharacter.text = "SPECTER";
         currentSubtitle.text = "Dr. Alistair Gray. That’s him, that’s the guy that made the Chrono-Resonators.";
-        await Task.Delay(5 * 1000);
+        await Task.Delay(4 * 1000);
         currentSubtitle.text = "He finished them in the late 1900s, so I’m guessing that… at this point, they’re not done yet.";
-        await Task.Delay(6 * 1000);
+        await Task.Delay(7 * 1000);
         currentSubtitle.enabled = false;
         currentCharacter.enabled = false;
     }
@@ -98,7 +98,7 @@ public class ShowSubtitles : MonoBehaviour
         currentCharacter.color = Color.green;
         currentCharacter.text = "SPECTER";
         currentSubtitle.text = "What? That was my voice… but it wasn’t me.";
-        await Task.Delay(4 * 1000);
+        await Task.Delay(5 * 1000);
         currentSubtitle.enabled = false;
         currentCharacter.enabled = false;
     }
@@ -125,7 +125,7 @@ public class ShowSubtitles : MonoBehaviour
         currentCharacter.color = Color.green;
         currentCharacter.text = "SPECTER";
         currentSubtitle.text = "Liana? What… why am I hearing this?";
-        await Task.Delay(3 * 1000);
+        await Task.Delay(5 * 1000);
         currentSubtitle.enabled = false;
         currentCharacter.enabled = false;
     }
@@ -205,13 +205,13 @@ public class ShowSubtitles : MonoBehaviour
         currentCharacter.color = Color.green;
         currentCharacter.text = "SPECTER";
         currentSubtitle.text = "Nothing new there. And now my Chrono-Res is all drained…";
-        await Task.Delay(3 * 1000);
-        currentSubtitle.text = "It’s gonna take at least 24 hours for this to recharge with enough juice for another jump.";
-        await Task.Delay(5 * 1000);
-        currentSubtitle.text = "What the hell, might as well start looking now.";
-        await Task.Delay(3 * 1000);
-        currentSubtitle.text = "If I’m lucky, the Prism might be here in 1940 too.";
         await Task.Delay(4 * 1000);
+        currentSubtitle.text = "It’s gonna take at least 24 hours for this to recharge with enough juice for another jump.";
+        await Task.Delay(7 * 1000);
+        currentSubtitle.text = "What the hell, might as well start looking now.";
+        await Task.Delay(4 * 1000);
+        currentSubtitle.text = "If I’m lucky, the Prism might be here in 1940 too.";
+        await Task.Delay(5 * 1000);
         currentSubtitle.enabled = false;
         currentCharacter.enabled = false;
     }
@@ -236,7 +236,7 @@ public class ShowSubtitles : MonoBehaviour
         currentCharacter.color = Color.green;
         currentCharacter.text = "SPECTER";
         currentSubtitle.text = "A hidden staircase? I might find what I’m looking for up there.";
-        await Task.Delay(4 * 1000);
+        await Task.Delay(5 * 1000);
         currentSubtitle.enabled = false;
         currentCharacter.enabled = false;
     }
