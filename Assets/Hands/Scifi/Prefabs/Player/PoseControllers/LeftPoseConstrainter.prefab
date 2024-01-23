@@ -607,7 +607,11 @@ MonoBehaviour:
   onFinished:
     m_PersistentCalls:
       m_Calls: []
+  onSecondWait:
+    m_PersistentCalls:
+      m_Calls: []
   waitTime: 0
+  waitTime2: 0
 --- !u!1 &6669150320575249259
 GameObject:
   m_ObjectHideFlags: 0
@@ -2230,6 +2234,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 6448325417161728026}
     m_Modifications:
+    - target: {fileID: 2228330556658847914, guid: 07f484df234538941adf5480852cdbb1, type: 3}
+      propertyPath: 'm_DirectAudioVolumes.Array.data[0]'
+      value: 0.7
+      objectReference: {fileID: 0}
     - target: {fileID: 4733492130494100531, guid: 07f484df234538941adf5480852cdbb1, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.0134

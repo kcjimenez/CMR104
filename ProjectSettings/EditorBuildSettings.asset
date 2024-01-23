@@ -17,6 +17,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_NexusHouse/Scenes/BadEnding.unity
     guid: cd65e48fd81105d47aa8ad1251d59b01
+  - enabled: 0
+    path: Assets/_NexusHouse/Scenes/subtitle test.unity
+    guid: a826fc1832cb71447b6d115936fdfa6d
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 7e49f318120d209498dc0a1fd9ff2e1b, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: d4e186c065b715a4eb29a8d55e4a6369, type: 2}
